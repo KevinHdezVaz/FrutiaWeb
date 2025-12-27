@@ -13,10 +13,11 @@ const Navbar = () => {
 
                 {/* Links de navegación */}
                 <div className="nav-links">
-                    <a href="#que-es">QUÉ ES</a>
-                    <a href="#modelo">MODELO</a>
-                    <a href="#resultados">RESULTADOS</a>
-                    <a href="#soporte">SOPORTE</a>
+                    <a href="#que-es">INICIO</a>
+                    <a href="#modelo">POR QUÉ FRUTIA</a>
+                    <a href="#features">CARACTERÍSTICAS</a>
+                    <a href="#how-it-works">CÓMO FUNCIONA</a>
+                    <a href="#soporte">PREGUNTAS</a>
                 </div>
 
                 {/* Botones de acción */}

@@ -1,0 +1,436 @@
+/* PreferenceSelector.css - Tema oficial de la app */
+:root {
+    --primary: #FF4D4D;
+    /* Strawberry Red - accent */
+    --primary-dark: #ea7474;
+    /* Darker strawberry */
+    --secondary-accent: #FF8A80;
+    /* Light Coral */
+    --warning: #FFA726;
+    /* Orange */
+    --text-dark: #0f172a;
+    --gray: #64748b;
+}
+
+.preferences {
+    padding: 5rem 0;
+    /* Fondo degradado con los colores de la app */
+    background: linear-gradient(135deg,
+            #fff5f5 0%,
+            /* Rosa muy suave */
+            #ffe5e5 30%,
+            /* Rosa claro */
+            #ffd5d5 60%,
+            /* Rosa medio */
+            #ffcfcf 100%
+            /* Rosa más intenso */
+        );
+}
+
+.container-wide {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.pref-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.pref-text {
+    max-width: 600px;
+    animation: fadeInLeft 0.6s ease-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.pref-main-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.pref-description {
+    font-size: 1.125rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Fondo para mascot-large */
+.mascot-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInRight 0.6s ease-out;
+    padding: 2rem;
+
+    /* NUEVO: Fondo circular */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 60%, transparent 100%);
+    border-radius: 50%;
+    position: relative;
+}
+
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mascot-img {
+    width: 100%;
+    max-width: 400px;
+    /* Antes: 500px */
+    /* Aumentado de 400px a 500px */
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.2));
+    /* Sombra más pronunciada */
+    animation: mascotFadeIn 0.4s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.mascot-img:hover {
+    transform: scale(1.08) translateY(-8px);
+    /* Efecto hover más pronunciado */
+}
+
+@keyframes mascotFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.pref-change-text {
+    text-align: center;
+    color: #6b7280;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    animation: fadeInUp 0.6s ease-out 0.2s backwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SCROLL HORIZONTAL CONTAINER CON FLECHAS */
+.pref-cards-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    /* Espacio arriba para que no se corte el borde */
+}
+
+.scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: white;
+    border: 2px solid #FF4D4D;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #FF4D4D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 107, 157, 0.2);
+}
+
+.scroll-arrow:hover {
+    background: #FF4D4D;
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 16px rgba(255, 107, 157, 0.3);
+}
+
+.scroll-arrow:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.scroll-arrow-left {
+    left: -25px;
+}
+
+.scroll-arrow-right {
+    right: -25px;
+}
+
+.pref-cards-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1rem 0;
+    /* Padding arriba y abajo para que no se corten los bordes */
+    scroll-behavior: smooth;
+    /* Scrollbar personalizado */
+    scrollbar-width: thin;
+    scrollbar-color: #FF4D4D #f3f4f6;
+}
+
+.pref-cards-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.pref-cards-container::-webkit-scrollbar-track {
+    background: #f3f4f6;
+    border-radius: 10px;
+}
+
+.pref-cards-container::-webkit-scrollbar-thumb {
+    background: #FF4D4D;
+    border-radius: 10px;
+}
+
+.pref-cards-container::-webkit-scrollbar-thumb:hover {
+    background: #ea7474;
+}
+
+.pref-cards-horizontal {
+    display: flex;
+    gap: 2rem;
+    min-width: min-content;
+    animation: fadeInUp 0.6s ease-out 0.4s backwards;
+}
+
+.pref-card-new {
+    background: white;
+    border: 3px solid #e5e7eb;
+    border-radius: 1.5rem;
+    padding: 1.5rem 1.25rem;
+    /* Antes: 2rem 1.5rem */
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
+    width: 220px;
+    /* Antes: 280px */
+    /* Ancho fijo para scroll horizontal */
+}
+
+.pref-card-new:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    border-color: #FF4D4D;
+}
+
+.pref-card-new.selected {
+    border-color: #FF4D4D;
+    background: #fff5f8;
+    box-shadow: 0 8px 24px rgba(255, 107, 157, 0.25);
+    transform: translateY(-4px);
+}
+
+.pref-card-new.selected:hover {
+    transform: translateY(-10px);
+}
+
+.pref-card-img {
+    width: 100%;
+    aspect-ratio: 1;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #f9fafb;
+    transition: transform 0.3s ease;
+}
+
+.pref-card-new:hover .pref-card-img {
+    transform: scale(1.05);
+}
+
+.pref-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.pref-card-new:hover .pref-card-img img {
+    transform: scale(1.1);
+}
+
+.pref-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.pref-card-new.selected .pref-card-title {
+    color: #FF4D4D;
+}
+
+.pref-card-desc {
+    font-size: 0.875rem;
+    color: #6b7280;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.pink-text {
+    color: #FF4D4D;
+    font-weight: 600;
+}
+
+.pref-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.6s ease-out 0.6s backwards;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d1d5db;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.dot:hover {
+    background: #FF4D4D;
+    transform: scale(1.2);
+}
+
+.dot.active {
+    background: #FF4D4D;
+    width: 32px;
+    border-radius: 5px;
+    animation: dotExpand 0.3s ease-out;
+}
+
+@keyframes dotExpand {
+    0% {
+        width: 10px;
+    }
+
+    50% {
+        width: 36px;
+    }
+
+    100% {
+        width: 32px;
+    }
+}
+
+.pref-footer-text {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.875rem;
+    animation: fadeInUp 0.6s ease-out 0.7s backwards;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .pref-header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .pref-text {
+        max-width: 100%;
+    }
+
+    .pref-card-new {
+        width: 260px;
+        /* Ancho menor en tablet */
+    }
+
+    .scroll-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .scroll-arrow-left {
+        left: -20px;
+    }
+
+    .scroll-arrow-right {
+        right: -20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pref-main-title {
+        font-size: 2rem;
+    }
+
+    .mascot-img {
+        max-width: 300px;
+        /* Antes: 350px */
+        /* Aumentado de 300px a 350px en móvil */
+    }
+
+    .pref-card-new {
+        width: 200px;
+        /* Antes: 240px */
+        /* Ancho menor en móvil */
+    }
+
+    .pref-cards-horizontal {
+        gap: 1.5rem;
+    }
+
+    .scroll-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 1.25rem;
+    }
+
+    .scroll-arrow-left {
+        left: 0;
+    }
+
+    .scroll-arrow-right {
+        right: 0;
+    }
+}

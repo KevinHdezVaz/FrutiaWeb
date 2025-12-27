@@ -1,0 +1,385 @@
+/* Features.css - Professional */
+:root {
+    --primary: #FF4D4D;
+    --primary-light: #FF8A80;
+    --primary-dark: #ea7474;
+    --text-dark: #0f172a;
+    --gray: #64748b;
+}
+
+.features-section {
+    padding: 3rem 0 2.5rem;
+    /* Antes: 3.5rem 0 3rem */
+    /* Más compacto */
+    background: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+.features-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    /* Antes: 2.5rem */
+
+    /* Más compacto */
+}
+
+.section-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(255, 77, 77, 0.12) 0%, rgba(255, 138, 128, 0.12) 100%);
+    color: var(--primary);
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    /* Más compacto */
+    border: 1px solid rgba(255, 77, 77, 0.2);
+}
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    /* Más pequeño */
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 0.8rem;
+    /* Más compacto */
+    line-height: 1.2;
+}
+
+.highlight-red {
+    color: var(--primary);
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    /* Más pequeño */
+    color: var(--gray);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+
+
+    gap: 1.5rem;
+    /* Antes: 1.8rem */
+    margin-bottom: 2.5rem;
+    /* Antes: 3rem */
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+    padding: 1.75rem 1.5rem;
+    /* Antes: 2rem 1.8rem */
+
+
+    /* Más compacto */
+    border-radius: 1.2rem;
+    /* Más pequeño */
+    border: 2px solid #e5e7eb;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--primary-light) 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    box-shadow: 0 20px 60px rgba(255, 77, 77, 0.15);
+}
+
+.feature-card:hover::before {
+    transform: scaleX(1);
+}
+
+.feature-icon {
+
+    font-size: 2.5rem;
+    /* Antes: 3rem */
+    margin-bottom: 1rem;
+    /* Antes: 1.2rem */
+
+
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.feature-title {
+
+    font-size: 1.25rem;
+    /* Antes: 1.35rem */
+
+    /* Más pequeño */
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.8rem;
+    /* Más compacto */
+    line-height: 1.3;
+}
+
+.feature-description {
+    font-size: 1rem;
+    /* Más pequeño */
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Download Section con React Icons */
+.download-section {
+    text-align: center;
+    padding: 2rem 1.75rem;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+    border-radius: 1.5rem;
+    border: 2px solid rgba(255, 77, 77, 0.15);
+}
+
+.download-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+.download-badges {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.badge-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+.badge-link.apple {
+    background: #000000;
+    color: white;
+}
+
+.badge-link.google {
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.badge-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.store-icon {
+    font-size: 2.5rem;
+}
+
+.store-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.store-subtitle {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.store-main {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .features-section {
+        padding: 3rem 0;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .features-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.125rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .feature-card {
+        padding: 2rem;
+    }
+
+    .feature-icon {
+        font-size: 3rem;
+    }
+
+    .feature-title {
+        font-size: 1.25rem;
+    }
+
+    .feature-description {
+        font-size: 1rem;
+    }
+
+    /* Download Section - estilos para react-icons */
+    .download-section {
+        text-align: center;
+        padding: 2rem 1.75rem;
+        background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+        border-radius: 1.5rem;
+        border: 2px solid rgba(255, 77, 77, 0.15);
+        margin-top: 2.5rem;
+        /* espacio antes de los badges */
+    }
+
+    .download-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 1.5rem;
+    }
+
+    .download-badges {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        /* un poco más separado que 1.25rem para mejor legibilidad */
+        flex-wrap: wrap;
+    }
+
+    .badge-link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 2rem;
+        border-radius: 999px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 1.1rem;
+        min-width: 220px;
+        /* evita que se achiquen demasiado */
+    }
+
+    .badge-link.apple {
+        background: #000000;
+        color: white;
+    }
+
+    .badge-link.google {
+        background: #ffffff;
+        color: #000000;
+        border: 1px solid #e0e0e0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .badge-link:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    }
+
+    .store-icon {
+        font-size: 2.8rem;
+        /* icono grande y protagonista */
+    }
+
+    .store-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .store-subtitle {
+        font-size: 0.85rem;
+        opacity: 0.9;
+        font-weight: 400;
+    }
+
+    .store-main {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .download-badges {
+            gap: 1rem;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .badge-link {
+            justify-content: center;
+            padding: 1rem 1.8rem;
+            min-width: 260px;
+        }
+
+        .store-icon {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .badge-link {
+            padding: 0.9rem 1.5rem;
+            font-size: 1rem;
+        }
+
+        .store-icon {
+            font-size: 2.2rem;
+        }
+
+        .store-main {
+            font-size: 1.1rem;
+        }
+    }
+}

@@ -3,7 +3,16 @@ import { useTranslation } from 'react-i18next';
 import '../styles/Hero.css';
 
 const Hero = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const currentLang = i18n.language.split('-')[0];
+
+    // Configuración de imágenes por idioma
+    const images = {
+        iphone: {
+            es: '/images/iphoneCaptura.png',
+            en: '/images/img_plan_ingle.png'
+        }
+    };
 
     return (
         <section className="hero" id="que-es">
@@ -16,7 +25,7 @@ const Hero = () => {
                         <div className="hero-visual">
                             <div className="phone-mockup">
                                 <img
-                                    src="/images/iphoneCaptura.png"
+                                    src={images.iphone[currentLang]}
                                     alt={t('hero.imageAlt')}
                                     className="iphone-mockup-img"
                                 />
@@ -63,4 +72,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Hero; 

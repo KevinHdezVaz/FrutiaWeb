@@ -3,7 +3,24 @@ import { useTranslation } from 'react-i18next';
 import '../styles/HowItWorks.css';
 
 const HowItWorks = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const currentLang = i18n.language.split('-')[0];
+
+    // Configuración de imágenes por idioma
+    const images = {
+        step1: {
+            es: '/images/img_crear_plan.png',
+            en: '/images/img_crear_plan_ingle.png'
+        },
+        step2: {
+            es: '/images/img_chat_frutia.png',
+            en: '/images/img_chat_ingle.png'
+        },
+        step3: {
+            es: '/images/img_racha.png',
+            en: '/images/img_racha_ingle.png'
+        }
+    };
 
     return (
         <section className="how-it-works" id="how-it-works">
@@ -47,7 +64,7 @@ const HowItWorks = () => {
                             <div className="step-visual">
                                 <div className="mockup-wrapper">
                                     <img
-                                        src="/images/img_crear_plan.png"
+                                        src={images.step1[currentLang]}
                                         alt={t('howItWorks.step1.imageAlt')}
                                         className="iphone-mockup"
                                         loading="lazy"
@@ -84,7 +101,7 @@ const HowItWorks = () => {
                             <div className="step-visual">
                                 <div className="mockup-wrapper">
                                     <img
-                                        src="/images/img_chat_frutia.png"
+                                        src={images.step2[currentLang]}
                                         alt={t('howItWorks.step2.imageAlt')}
                                         className="iphone-mockup"
                                         loading="lazy"
@@ -120,7 +137,7 @@ const HowItWorks = () => {
                             <div className="step-visual">
                                 <div className="mockup-wrapper">
                                     <img
-                                        src="/images/img_racha.png"
+                                        src={images.step3[currentLang]}
                                         alt={t('howItWorks.step3.imageAlt')}
                                         className="iphone-mockup"
                                         loading="lazy"
@@ -136,4 +153,4 @@ const HowItWorks = () => {
     );
 };
 
-export default HowItWorks;
+export default HowItWorks; 

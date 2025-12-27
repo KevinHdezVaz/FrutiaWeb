@@ -1,59 +1,60 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/PreferenceSelector.css';
 
 const PreferenceSelector = () => {
+    const { t } = useTranslation();
     const [selectedPreference, setSelectedPreference] = useState('motivador');
     const scrollContainerRef = useRef(null);
     const autoScrollInterval = useRef(null);
 
-
     // Configuración de cada personalidad
     const preferences = {
         motivador: {
-            name: 'Motivador',
-            description: 'Te impulsa cuando cuesta.',
+            name: t('preferences.motivador.name'),
+            description: t('preferences.motivador.description'),
             mascotLarge: '/images/frutia_motivador-sinfondo.png',
             mascotCard: '/images/frutia_motivador.jpeg',
         },
         directo: {
-            name: 'Directo',
-            description: 'Va al punto, sin rodeos',
+            name: t('preferences.directo.name'),
+            description: t('preferences.directo.description'),
             mascotLarge: '/images/frutia_directa-sinfondo.png',
             mascotCard: '/images/frutia_directa.jpeg',
         },
         cercano: {
-            name: 'Cercano',
-            description: 'Te acompaña y te entiende',
+            name: t('preferences.cercano.name'),
+            description: t('preferences.cercano.description'),
             mascotLarge: '/images/frutia_cercana-sinfondo.png',
             mascotCard: '/images/frutia_cercana.jpeg',
         },
         meAdapto: {
-            name: 'Me Adapto bueno',
-            description: 'Se ajusta según tu momento',
+            name: t('preferences.meAdapto.name'),
+            description: t('preferences.meAdapto.description'),
             mascotLarge: '/images/frutia_meadapto-sinfondo.png',
             mascotCard: '/images/frutia_meadapto.jpeg',
         },
         frutia2: {
-            name: 'Me Adapto',
-            description: 'Se ajusta según tu momento',
+            name: t('preferences.frutia2.name'),
+            description: t('preferences.frutia2.description'),
             mascotLarge: '/images/frutia2-sinfondo.png',
             mascotCard: '/images/frutia2.jpeg',
         },
         frutia3: {
-            name: 'Me Adapto',
-            description: 'Se ajusta según tu momento',
+            name: t('preferences.frutia3.name'),
+            description: t('preferences.frutia3.description'),
             mascotLarge: '/images/frutia3-sinfondo.png',
             mascotCard: '/images/frutia3.jpeg',
         },
         frutia4: {
-            name: 'Me Adapto',
-            description: 'Se ajusta según tu momento',
+            name: t('preferences.frutia4.name'),
+            description: t('preferences.frutia4.description'),
             mascotLarge: '/images/frutia4-sinfondo.png',
             mascotCard: '/images/frutia4.jpeg',
         },
         frutia5: {
-            name: 'Me Adapto',
-            description: 'Se ajusta según tu momento',
+            name: t('preferences.frutia5.name'),
+            description: t('preferences.frutia5.description'),
             mascotLarge: '/images/frutia5-sinfondo.png',
             mascotCard: '/images/frutia5.jpeg',
         },
@@ -62,8 +63,6 @@ const PreferenceSelector = () => {
     const preferencesArray = Object.keys(preferences);
     const currentPref = preferences[selectedPreference];
 
-
-    // Detener auto-scroll cuando el usuario interactúa
     const handleUserInteraction = (key) => {
         if (autoScrollInterval.current) {
             clearInterval(autoScrollInterval.current);
@@ -71,11 +70,10 @@ const PreferenceSelector = () => {
         setSelectedPreference(key);
     };
 
-    // Navegación con flechas
     const scrollLeft = () => {
         if (scrollContainerRef.current) {
             scrollContainerRef.current.scrollBy({
-                left: -312, // width + gap
+                left: -312,
                 behavior: 'smooth'
             });
         }
@@ -84,13 +82,12 @@ const PreferenceSelector = () => {
     const scrollRight = () => {
         if (scrollContainerRef.current) {
             scrollContainerRef.current.scrollBy({
-                left: 312, // width + gap
+                left: 312,
                 behavior: 'smooth'
             });
         }
     };
 
-    // Navegar a anterior/siguiente
     const goToPrevious = () => {
         if (autoScrollInterval.current) {
             clearInterval(autoScrollInterval.current);
@@ -116,14 +113,12 @@ const PreferenceSelector = () => {
             <div className="container-wide">
                 <div className="pref-header">
                     <div className="pref-text">
-                        <h2 className="pref-main-title">Elige cómo quieres que Frutia te acompañe</h2>
+                        <h2 className="pref-main-title">{t('preferences.title')}</h2>
                         <p className="pref-description">
-                            No cambia el plan.<br />
-                            Cambia la forma en que Frutia te habla y te guía.
+                            {t('preferences.subtitle')}
                         </p>
                     </div>
 
-                    {/* Mascota grande - Cambia según selección con animación */}
                     <div className="mascot-large">
                         <img
                             key={selectedPreference}
@@ -134,15 +129,13 @@ const PreferenceSelector = () => {
                     </div>
                 </div>
 
-                <p className="pref-change-text">Puedes cambiarlo cuando quieras.</p>
+                <p className="pref-change-text">{t('preferences.changeText')}</p>
 
-                {/* Cards de preferencias - Scroll horizontal con flechas */}
                 <div className="pref-cards-wrapper">
-                    {/* Flecha izquierda */}
                     <button
                         className="scroll-arrow scroll-arrow-left"
                         onClick={goToPrevious}
-                        aria-label="Anterior"
+                        aria-label={t('preferences.previous')}
                     >
                         ‹
                     </button>
@@ -160,28 +153,24 @@ const PreferenceSelector = () => {
                                     </div>
                                     <h4 className="pref-card-title">{preferences[key].name}</h4>
                                     <p className="pref-card-desc">
-                                        {key === 'cercano' ? (
-                                            <span className="pink-text">{preferences[key].description}</span>
-                                        ) : (
-                                            preferences[key].description
-                                        )}
+                                        <span className={key === 'cercano' ? 'pink-text' : ''}>
+                                            {preferences[key].description}
+                                        </span>
                                     </p>
                                 </button>
                             ))}
                         </div>
                     </div>
 
-                    {/* Flecha derecha */}
                     <button
                         className="scroll-arrow scroll-arrow-right"
                         onClick={goToNext}
-                        aria-label="Siguiente"
+                        aria-label={t('preferences.next')}
                     >
                         ›
                     </button>
                 </div>
 
-                {/* Dots indicadores - dinámicos */}
                 <div className="pref-dots">
                     {Object.keys(preferences).map((key) => (
                         <span
@@ -191,12 +180,9 @@ const PreferenceSelector = () => {
                         ></span>
                     ))}
                 </div>
-
             </div>
         </section>
     );
 };
 
 export default PreferenceSelector;
-
-

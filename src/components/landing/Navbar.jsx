@@ -1,31 +1,47 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/Navbar.css';
 
 const Navbar = () => {
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
+    // Normalizar el idioma actual (solo primeras 2 letras)
+    const currentLang = i18n.language.split('-')[0]; // 'es-MX' → 'es'
+
     return (
         <nav className="navbar">
             <div className="nav-content">
-                {/* Logo con icono */}
                 <div className="nav-logo">
                     <img src="/images/fondoAppFrutia.png" alt="Frutia" className="logo-icon" />
                     <span className="logo-text">Frutia</span>
                 </div>
 
-                {/* Links de navegación */}
                 <div className="nav-links">
-                    <a href="#que-es">INICIO</a>
-                    <a href="#modelo">POR QUÉ FRUTIA</a>
-                    <a href="#features">CARACTERÍSTICAS</a>
-                    <a href="#how-it-works">CÓMO FUNCIONA</a>
-                    <a href="#soporte">PREGUNTAS</a>
+                    <a href="#que-es">{t('nav.home')}</a>
+                    <a href="#modelo">{t('nav.why')}</a>
+                    <a href="#features">{t('nav.features')}</a>
+                    <a href="#how-it-works">{t('nav.howItWorks')}</a>
+                    <a href="#soporte">{t('nav.faq')}</a>
                 </div>
 
-                {/* Botones de acción */}
                 <div className="nav-actions">
-                    <button className="nav-btn-primary">Descargar app</button>
+                    {/* Selector de idioma */}
+                    <button
+                        onClick={() => changeLanguage(currentLang === 'es' ? 'en' : 'es')}
+                        className="lang-switcher"
+                    >
+                        {currentLang === 'es' ? '🇺🇸 EN' : '🇪🇸 ES'}
+                    </button>
+
+                    <button className="nav-btn-primary" onClick={() => window.location.href = '#features'}>
+                        {t('nav.download')}
+                    </button>
                 </div>
 
-                {/* Mobile menu button */}
                 <button className="mobile-menu-btn">
                     <span className="menu-icon"></span>
                     <span className="menu-icon"></span>

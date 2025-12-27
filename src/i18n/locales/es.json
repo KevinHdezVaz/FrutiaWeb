@@ -1,0 +1,205 @@
+{
+    "nav": {
+        "home": "INICIO",
+        "why": "POR QUÉ FRUTIA",
+        "features": "CARACTERÍSTICAS",
+        "howItWorks": "CÓMO FUNCIONA",
+        "faq": "PREGUNTAS",
+        "download": "Descargar app"
+    },
+    "hero": {
+        "title": "Tu nutricionista personal",
+        "highlight": "en el bolsillo",
+        "subtitle": "Tu nutricionista 24/7 que te guía, ajusta y celebra cada logro contigo.",
+        "watch": "Ver cómo funciona",
+        "badge": "4.9 ★ en App Store",
+        "imageAlt": "Frutia App en iPhone - Pantalla de nutrición personalizada",
+        "socialProof": "Ya usado por +12,400 personas",
+        "slogan": "CONSTANCIA. CRITERIO. PROCESO.",
+        "sloganSubtitle": "Acompañamiento real para decisiones reales."
+    },
+    "preferences": {
+        "title": "Elige cómo quieres que Frutia te acompañe",
+        "subtitle": "No cambia el plan. Cambia la forma en que Frutia te habla y te guía.",
+        "changeText": "Puedes cambiarlo cuando quieras.",
+        "previous": "Anterior",
+        "next": "Siguiente",
+        "motivador": {
+            "name": "Motivador",
+            "description": "Te impulsa cuando cuesta."
+        },
+        "directo": {
+            "name": "Directo",
+            "description": "Va al punto, sin rodeos"
+        },
+        "cercano": {
+            "name": "Cercano",
+            "description": "Te acompaña y te entiende"
+        },
+        "meAdapto": {
+            "name": "Me Adapto bueno",
+            "description": "Se ajusta según tu momento"
+        },
+        "frutia2": {
+            "name": "Me Adapto",
+            "description": "Se ajusta según tu momento"
+        },
+        "frutia3": {
+            "name": "Me Adapto",
+            "description": "Se ajusta según tu momento"
+        },
+        "frutia4": {
+            "name": "Me Adapto",
+            "description": "Se ajusta según tu momento"
+        },
+        "frutia5": {
+            "name": "Me Adapto",
+            "description": "Se ajusta según tu momento"
+        }
+    },
+    "ctaFinal": {
+        "title": "Comienza tu transformación hoy",
+        "text": "Únete a miles de personas que ya están construyendo hábitos sostenibles",
+        "button": "Descargar Frutia",
+        "note": "Disponible en iOS y Android"
+    },
+    "footer": {
+        "product": {
+            "title": "Producto",
+            "home": "Inicio",
+            "why": "Por qué Frutia",
+            "features": "Características",
+            "howItWorks": "Cómo Funciona"
+        },
+        "download": {
+            "title": "Descargar"
+        },
+        "support": {
+            "title": "Soporte",
+            "faq": "Preguntas Frecuentes",
+            "contact": "Contacto",
+            "helpCenter": "Centro de Ayuda"
+        },
+        "legal": {
+            "title": "Legal",
+            "terms": "Términos y Condiciones",
+            "privacy": "Política de Privacidad",
+            "cookies": "Aviso de Cookies"
+        },
+        "copyright": "© 2025 Frutia. Todos los derechos reservados.",
+        "tagline": "Tu nutricionista en el bolsillo"
+    },
+    "faq": {
+        "badge": "SOPORTE",
+        "title": "Preguntas",
+        "titleHighlight": "frecuentes",
+        "subtitle": "Resolvemos tus dudas más comunes sobre Frutia",
+        "questions": {
+            "q1": {
+                "question": "¿Frutia reemplaza a un nutricionista?",
+                "answer": "Frutia está diseñada para acompañarte día a día con planificación, seguimiento y educación nutricional. Para condiciones médicas específicas y/o cambios físicos (subir de masa muscular o bajar grasa corporal) lo ideal es complementarlo con el seguimiento constante."
+            },
+            "q2": {
+                "question": "¿Qué pasa si no tengo ciertos alimentos?",
+                "answer": "Puedes trabajar con opciones y reemplazos. La idea es adaptarse a lo que tengas disponible."
+            },
+            "q3": {
+                "question": "¿Puedo usarlo si tengo restricciones (sin lactosa, etc.)?",
+                "answer": "Sí. La app puede adaptar opciones y sugerencias según tus preferencias/restricciones."
+            },
+            "q4": {
+                "question": "¿Cómo maneja Frutia cuando 'me salgo' del plan?",
+                "answer": "Te propone ajustes realistas para el resto del día (sin castigos), para mantener el progreso."
+            },
+            "q5": {
+                "question": "¿Puedo exportar mi plan?",
+                "answer": "Sí: historial y descarga en PDF (ideal para coaches o para tu control)."
+            }
+        }
+    },
+    "howItWorks": {
+        "badge": "PROCESO",
+        "title": "¿Cómo funciona",
+        "subtitle": "Tres pasos simples para transformar tu relación con la comida",
+        "step1": {
+            "title": "Definimos tu rumbo",
+            "description": "Respondes unas pocas preguntas sobre ti, tu objetivo y tu contexto. En segundos Frutia conoce tu punto de partida real.",
+            "feature1": "Análisis personalizado",
+            "feature2": "Objetivos claros",
+            "feature3": "Plan a tu medida",
+            "imageAlt": "Pantalla de creación de plan personalizado"
+        },
+        "step2": {
+            "title": "Te acompañamos cada día",
+            "description": "Tu coach personal en el bolsillo: te guía en tiempo real, ajusta el plan si la vida cambia y celebra cada paso.",
+            "feature1": "Chat 24/7",
+            "feature2": "Ajustes automáticos",
+            "feature3": "Recordatorios",
+            "imageAlt": "Chat con Frutia IA"
+        },
+        "step3": {
+            "title": "Sostienes el proceso",
+            "description": "Ves tu progreso semanal, rachas y ajustes automáticos. Constancia sin esfuerzo.",
+            "feature1": "Seguimiento visual",
+            "feature2": "Rachas motivantes",
+            "feature3": "Celebraciones",
+            "imageAlt": "Pantalla de rachas y progreso"
+        }
+    },
+    "differentiators": {
+        "title": "Por qué",
+        "titleEnd": "es diferente",
+        "subtitle": "No es un contador de calorías. Es un sistema que realmente funciona.",
+        "card1": {
+            "title": "Hábitos sostenibles",
+            "description": "Salud real se construye día a día, no en dietas extremas."
+        },
+        "card2": {
+            "title": "Resultados visibles",
+            "description": "Progreso medible en grasa, energía y bienestar."
+        },
+        "card3": {
+            "title": "Guía en tiempo real",
+            "description": "Decisiones inteligentes justo cuando las necesitas."
+        },
+        "statement": {
+            "bold": "Registrar comidas no cambia nada.",
+            "highlight": "interviene, guía y sostiene",
+            "end": "decisiones reales para resultados que duran."
+        },
+        "features": {
+            "feature1": "Interviene en el momento",
+            "feature2": "Se adapta a tu vida",
+            "feature3": "Resultados duraderos"
+        }
+    },
+    "features": {
+        "badge": "CARACTERÍSTICAS",
+        "title": "Todo lo que necesitas en",
+        "titleHighlight": "una sola app",
+        "subtitle": "Funcionalidades diseñadas para que logres tus objetivos de forma sostenible",
+        "feature1": {
+            "title": "Macros exactos por objetivo",
+            "description": "Corta, mantén o sube: Frutia calcula calorías y macros y los ajusta con tu progreso."
+        },
+        "feature2": {
+            "title": "Plan por opciones",
+            "description": "Elige 1 opción por grupo para armar tu comida. Más flexible y más fácil de cumplir."
+        },
+        "feature3": {
+            "title": "Si te sales del plan, te reacomoda el día",
+            "description": "Comiste algo fuera: Frutia te da opciones para compensar sin caer en 'todo o nada'."
+        },
+        "feature4": {
+            "title": "Chat con IA (texto y voz)",
+            "description": "Preguntas, dudas, reemplazos, porciones, recetas. Tu asistente siempre disponible."
+        },
+        "feature5": {
+            "title": "Seguimiento visual",
+            "description": "Resumen del día por macros, historial y exportación a PDF."
+        },
+        "downloadTitle": "Disponible en",
+        "downloadOn": "Descargar en",
+        "getOn": "Obtener en"
+    }
+}

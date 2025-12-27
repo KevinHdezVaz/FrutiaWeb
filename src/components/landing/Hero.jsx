@@ -1,17 +1,15 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/Hero.css';
 
 const Hero = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="hero" id="que-es">
-            {/* Background con overlay + partículas o gradiente dinámico */}
             <div className="hero-bg">
-
-
-                {/* Overlay con degradado más elegante + ruido sutil */}
                 <div className="hero-overlay"></div>
 
-                {/* Contenido principal - layout asimétrico más moderno */}
                 <div className="hero-container">
                     <div className="hero-content">
                         {/* Izquierda: Mockup con tilt y glow */}
@@ -19,36 +17,32 @@ const Hero = () => {
                             <div className="phone-mockup">
                                 <img
                                     src="/images/iphoneCaptura.png"
-                                    alt="Frutia App en iPhone - Pantalla de nutrición personalizada"
+                                    alt={t('hero.imageAlt')}
                                     className="iphone-mockup-img"
                                 />
-                                {/* Badge flotante opcional */}
-                                <div className="badge-floating">4.9 ★ en App Store</div>
+                                <div className="badge-floating">{t('hero.badge')}</div>
                             </div>
                         </div>
 
                         {/* Derecha: Textos + CTA */}
                         <div className="hero-text">
                             <h1 className="hero-title">
-                                Tu nutricionista personal
-                                <span className="highlight">en el bolsillo</span>
+                                {t('hero.title')}
+                                <span className="highlight">{t('hero.highlight')}</span>
                             </h1>
 
                             <p className="hero-subtitle">
-                                Tu nutricionista 24/7 que te guía, ajusta y celebra cada logro contigo.
+                                {t('hero.subtitle')}
                             </p>
 
-                            {/* CTA más potentes y visuales */}
                             <div className="hero-ctas">
-
                                 <a href="#ver-video" className="btn-secondary">
-                                    Ver cómo funciona →
+                                    {t('hero.watch')} →
                                 </a>
                             </div>
 
-                            {/* Social proof sutil */}
                             <div className="social-proof">
-                                <span>Ya usado por +12,400 personas</span>
+                                <span>{t('hero.socialProof')}</span>
                                 <div className="stars">★★★★★</div>
                             </div>
                         </div>
@@ -56,12 +50,11 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Footer hero - más limpio y con wave o transición */}
             <div className="hero-footer">
                 <div className="footer-content">
-                    <h2 className="hero-slogan">CONSTANCIA. CRITERIO. PROCESO.</h2>
+                    <h2 className="hero-slogan">{t('hero.slogan')}</h2>
                     <p className="hero-subtitle-footer">
-                        Acompañamiento real para decisiones reales.
+                        {t('hero.sloganSubtitle')}
                         <span className="emoji">🥑💪</span>
                     </p>
                 </div>

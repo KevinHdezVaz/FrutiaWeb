@@ -1,68 +1,71 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/Differentiators.css';
 
 const Differentiators = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="differentiators" id="modelo">
             <div className="diff-container">
-                {/* Header más pequeño */}
+                {/* Header */}
                 <div className="diff-header">
                     <h2 className="diff-main-title animate-on-load" style={{ '--order': 1 }}>
-                        Por qué <span className="highlight-red">Frutia</span> es diferente
+                        {t('differentiators.title')} <span className="highlight-red">Frutia</span> {t('differentiators.titleEnd')}
                     </h2>
                     <p className="diff-subtitle animate-on-load" style={{ '--order': 2 }}>
-                        No es un contador de calorías. Es un sistema que realmente funciona.
+                        {t('differentiators.subtitle')}
                     </p>
                 </div>
 
-                {/* Solo 3 cards para no saturar */}
+                {/* Cards */}
                 <div className="diff-grid">
                     <div className="diff-card animate-on-load" style={{ '--order': 3 }}>
                         <div className="card-icon">🌱</div>
-                        <h3 className="card-title">Hábitos sostenibles</h3>
+                        <h3 className="card-title">{t('differentiators.card1.title')}</h3>
                         <p className="card-description">
-                            Salud real se construye día a día, no en dietas extremas.
+                            {t('differentiators.card1.description')}
                         </p>
                     </div>
 
                     <div className="diff-card animate-on-load" style={{ '--order': 4 }}>
                         <div className="card-icon">📈</div>
-                        <h3 className="card-title">Resultados visibles</h3>
+                        <h3 className="card-title">{t('differentiators.card2.title')}</h3>
                         <p className="card-description">
-                            Progreso medible en grasa, energía y bienestar.
+                            {t('differentiators.card2.description')}
                         </p>
                     </div>
 
                     <div className="diff-card animate-on-load" style={{ '--order': 5 }}>
                         <div className="card-icon">🧠</div>
-                        <h3 className="card-title">Guía en tiempo real</h3>
+                        <h3 className="card-title">{t('differentiators.card3.title')}</h3>
                         <p className="card-description">
-                            Decisiones inteligentes justo cuando las necesitas.
+                            {t('differentiators.card3.description')}
                         </p>
                     </div>
                 </div>
 
-                {/* Statement box más corto y centrado */}
+                {/* Statement box */}
                 <div className="diff-statement-box animate-on-load" style={{ '--order': 6 }}>
                     <p className="statement-text">
-                        <strong>Registrar comidas no cambia nada.</strong><br />
-                        Frutia <span className="text-highlight">interviene, guía y sostiene</span> decisiones reales para resultados que duran.
+                        <strong>{t('differentiators.statement.bold')}</strong><br />
+                        Frutia <span className="text-highlight">{t('differentiators.statement.highlight')}</span> {t('differentiators.statement.end')}
                     </p>
                 </div>
 
-                {/* Features en una sola línea en desktop */}
+                {/* Features list */}
                 <div className="features-list animate-on-load" style={{ '--order': 7 }}>
                     <div className="feature-item">
                         <div className="feature-check">✓</div>
-                        <span>Interviene en el momento</span>
+                        <span>{t('differentiators.features.feature1')}</span>
                     </div>
                     <div className="feature-item">
                         <div className="feature-check">✓</div>
-                        <span>Se adapta a tu vida</span>
+                        <span>{t('differentiators.features.feature2')}</span>
                     </div>
                     <div className="feature-item">
                         <div className="feature-check">✓</div>
-                        <span>Resultados duraderos</span>
+                        <span>{t('differentiators.features.feature3')}</span>
                     </div>
                 </div>
             </div>

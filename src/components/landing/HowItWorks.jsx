@@ -1,18 +1,21 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/HowItWorks.css';
 
 const HowItWorks = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="how-it-works" id="how-it-works">
             <div className="container">
                 {/* Header */}
                 <div className="section-header">
-                    <span className="section-badge">PROCESO</span>
+                    <span className="section-badge">{t('howItWorks.badge')}</span>
                     <h2 className="section-title">
-                        ¿Cómo funciona <span className="highlight-red">Frutia</span>?
+                        {t('howItWorks.title')} <span className="highlight-red">Frutia</span>?
                     </h2>
                     <p className="section-subtitle">
-                        Tres pasos simples para transformar tu relación con la comida
+                        {t('howItWorks.subtitle')}
                     </p>
                 </div>
 
@@ -29,16 +32,15 @@ const HowItWorks = () => {
                             <div className="step-content">
                                 <div className="step-header">
                                     <div className="step-icon">🎯</div>
-                                    <h3 className="step-title">Definimos tu rumbo</h3>
+                                    <h3 className="step-title">{t('howItWorks.step1.title')}</h3>
                                 </div>
                                 <p className="step-text">
-                                    Respondes unas pocas preguntas sobre ti, tu objetivo y tu contexto.
-                                    En segundos Frutia conoce tu punto de partida real.
+                                    {t('howItWorks.step1.description')}
                                 </p>
                                 <div className="step-features">
-                                    <span className="feature-tag">✓ Análisis personalizado</span>
-                                    <span className="feature-tag">✓ Objetivos claros</span>
-                                    <span className="feature-tag">✓ Plan a tu medida</span>
+                                    <span className="feature-tag">✓ {t('howItWorks.step1.feature1')}</span>
+                                    <span className="feature-tag">✓ {t('howItWorks.step1.feature2')}</span>
+                                    <span className="feature-tag">✓ {t('howItWorks.step1.feature3')}</span>
                                 </div>
                             </div>
 
@@ -46,7 +48,7 @@ const HowItWorks = () => {
                                 <div className="mockup-wrapper">
                                     <img
                                         src="/images/img_crear_plan.png"
-                                        alt="Selección de objetivo"
+                                        alt={t('howItWorks.step1.imageAlt')}
                                         className="iphone-mockup"
                                         loading="lazy"
                                     />
@@ -67,16 +69,15 @@ const HowItWorks = () => {
                             <div className="step-content">
                                 <div className="step-header">
                                     <div className="step-icon">🤝</div>
-                                    <h3 className="step-title">Te acompañamos cada día</h3>
+                                    <h3 className="step-title">{t('howItWorks.step2.title')}</h3>
                                 </div>
                                 <p className="step-text">
-                                    Tu coach personal en el bolsillo: te guía en tiempo real,
-                                    ajusta el plan si la vida cambia y celebra cada paso.
+                                    {t('howItWorks.step2.description')}
                                 </p>
                                 <div className="step-features">
-                                    <span className="feature-tag">✓ Chat 24/7</span>
-                                    <span className="feature-tag">✓ Ajustes automáticos</span>
-                                    <span className="feature-tag">✓ Recordatorios</span>
+                                    <span className="feature-tag">✓ {t('howItWorks.step2.feature1')}</span>
+                                    <span className="feature-tag">✓ {t('howItWorks.step2.feature2')}</span>
+                                    <span className="feature-tag">✓ {t('howItWorks.step2.feature3')}</span>
                                 </div>
                             </div>
 
@@ -84,7 +85,7 @@ const HowItWorks = () => {
                                 <div className="mockup-wrapper">
                                     <img
                                         src="/images/img_chat_frutia.png"
-                                        alt="Selección de objetivo"
+                                        alt={t('howItWorks.step2.imageAlt')}
                                         className="iphone-mockup"
                                         loading="lazy"
                                     />
@@ -104,26 +105,23 @@ const HowItWorks = () => {
                             <div className="step-content">
                                 <div className="step-header">
                                     <div className="mascot-celebrate">🍓</div>
-
-                                    <h3 className="step-title">Sostienes el proceso</h3>
+                                    <h3 className="step-title">{t('howItWorks.step3.title')}</h3>
                                 </div>
                                 <p className="step-text">
-                                    Ves tu progreso semanal, rachas y ajustes automáticos.
-                                    Constancia sin esfuerzo.
+                                    {t('howItWorks.step3.description')}
                                 </p>
                                 <div className="step-features">
-                                    <span className="feature-tag">✓ Seguimiento visual</span>
-                                    <span className="feature-tag">✓ Rachas motivantes</span>
-                                    <span className="feature-tag">✓ Celebraciones</span>
+                                    <span className="feature-tag">✓ {t('howItWorks.step3.feature1')}</span>
+                                    <span className="feature-tag">✓ {t('howItWorks.step3.feature2')}</span>
+                                    <span className="feature-tag">✓ {t('howItWorks.step3.feature3')}</span>
                                 </div>
                             </div>
 
                             <div className="step-visual">
-
                                 <div className="mockup-wrapper">
                                     <img
                                         src="/images/img_racha.png"
-                                        alt="Selección de objetivo"
+                                        alt={t('howItWorks.step3.imageAlt')}
                                         className="iphone-mockup"
                                         loading="lazy"
                                     />
@@ -133,8 +131,6 @@ const HowItWorks = () => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </section>
     );

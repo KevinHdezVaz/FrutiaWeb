@@ -1,33 +1,36 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaApple, FaGooglePlay } from 'react-icons/fa';
 import '../styles/Features.css';
 
 const Features = () => {
+    const { t } = useTranslation();
+
     const features = [
         {
             icon: "🎯",
-            title: "Macros exactos por objetivo",
-            description: "Corta, mantén o sube: Frutia calcula calorías y macros y los ajusta con tu progreso."
+            title: t('features.feature1.title'),
+            description: t('features.feature1.description')
         },
         {
             icon: "🍽️",
-            title: "Plan por opciones",
-            description: "Elige 1 opción por grupo para armar tu comida. Más flexible y más fácil de cumplir."
+            title: t('features.feature2.title'),
+            description: t('features.feature2.description')
         },
         {
             icon: "🔄",
-            title: "Si te sales del plan, te reacomoda el día",
-            description: "Comiste algo fuera: Frutia te da opciones para compensar sin caer en 'todo o nada'."
+            title: t('features.feature3.title'),
+            description: t('features.feature3.description')
         },
         {
             icon: "💬",
-            title: "Chat con IA (texto y voz)",
-            description: "Preguntas, dudas, reemplazos, porciones, recetas. Tu asistente siempre disponible."
+            title: t('features.feature4.title'),
+            description: t('features.feature4.description')
         },
         {
             icon: "📊",
-            title: "Seguimiento visual",
-            description: "Resumen del día por macros, historial y exportación a PDF."
+            title: t('features.feature5.title'),
+            description: t('features.feature5.description')
         }
     ];
 
@@ -36,12 +39,12 @@ const Features = () => {
             <div className="container">
                 {/* Header */}
                 <div className="features-header">
-                    <span className="section-badge">CARACTERÍSTICAS</span>
+                    <span className="section-badge">{t('features.badge')}</span>
                     <h2 className="section-title">
-                        Todo lo que necesitas en <span className="highlight-red">una sola app</span>
+                        {t('features.title')} <span className="highlight-red">{t('features.titleHighlight')}</span>
                     </h2>
                     <p className="section-subtitle">
-                        Funcionalidades diseñadas para que logres tus objetivos de forma sostenible
+                        {t('features.subtitle')}
                     </p>
                 </div>
 
@@ -56,35 +59,37 @@ const Features = () => {
                     ))}
                 </div>
 
-                {/* Download Section con react-icons */}
+                {/* Download Section */}
                 <div className="download-section">
-                    <h3 className="download-title">Disponible en</h3>
+                    <h3 className="download-title">{t('features.downloadTitle')}</h3>
                     <div className="download-badges">
-                        <a
-                            href="https://apps.apple.com/" // ← pon tu link real de la app
+
+                        <a href="https://apps.apple.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="badge-link apple"
                         >
                             <FaApple className="store-icon" />
                             <div className="store-text">
-                                <span className="store-subtitle">Descargar en</span>
+                                <span className="store-subtitle">{t('features.downloadOn')}</span>
                                 <span className="store-main">App Store</span>
                             </div>
                         </a>
 
-                        <a
-                            href="https://play.google.com/store/apps" // ← pon tu link real
+
+
+                        <a href="https://play.google.com/store/apps"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="badge-link google"
                         >
                             <FaGooglePlay className="store-icon" />
                             <div className="store-text">
-                                <span className="store-subtitle">Obtener en</span>
+                                <span className="store-subtitle">{t('features.getOn')}</span>
                                 <span className="store-main">Google Play</span>
                             </div>
                         </a>
+
                     </div>
                 </div>
             </div>
@@ -92,4 +97,4 @@ const Features = () => {
     );
 };
 
-export default Features;
+export default Features;    

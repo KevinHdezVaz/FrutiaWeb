@@ -1,29 +1,31 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/FAQ.css';
 
 const FAQ = () => {
+    const { t } = useTranslation();
     const [openIndex, setOpenIndex] = useState(null);
 
     const faqs = [
         {
-            question: "¿Frutia reemplaza a un nutricionista?",
-            answer: "Frutia está diseñada para acompañarte día a día con planificación, seguimiento y educación nutricional. Para condiciones médicas específicas y/o cambios físicos (subir de masa muscular o bajar grasa corporal) lo ideal es complementarlo con el seguimiento constante."
+            question: t('faq.questions.q1.question'),
+            answer: t('faq.questions.q1.answer')
         },
         {
-            question: "¿Qué pasa si no tengo ciertos alimentos?",
-            answer: "Puedes trabajar con opciones y reemplazos. La idea es adaptarse a lo que tengas disponible."
+            question: t('faq.questions.q2.question'),
+            answer: t('faq.questions.q2.answer')
         },
         {
-            question: "¿Puedo usarlo si tengo restricciones (sin lactosa, etc.)?",
-            answer: "Sí. La app puede adaptar opciones y sugerencias según tus preferencias/restricciones."
+            question: t('faq.questions.q3.question'),
+            answer: t('faq.questions.q3.answer')
         },
         {
-            question: "¿Cómo maneja Frutia cuando 'me salgo' del plan?",
-            answer: "Te propone ajustes realistas para el resto del día (sin castigos), para mantener el progreso."
+            question: t('faq.questions.q4.question'),
+            answer: t('faq.questions.q4.answer')
         },
         {
-            question: "¿Puedo exportar mi plan?",
-            answer: "Sí: historial y descarga en PDF (ideal para coaches o para tu control)."
+            question: t('faq.questions.q5.question'),
+            answer: t('faq.questions.q5.answer')
         }
     ];
 
@@ -36,12 +38,12 @@ const FAQ = () => {
             <div className="container">
                 {/* Header */}
                 <div className="faq-header">
-                    <span className="section-badge">SOPORTE</span>
+                    <span className="section-badge">{t('faq.badge')}</span>
                     <h2 className="section-title">
-                        Preguntas <span className="highlight-red">frecuentes</span>
+                        {t('faq.title')} <span className="highlight-red">{t('faq.titleHighlight')}</span>
                     </h2>
                     <p className="section-subtitle">
-                        Resolvemos tus dudas más comunes sobre Frutia
+                        {t('faq.subtitle')}
                     </p>
                 </div>
 
@@ -65,8 +67,6 @@ const FAQ = () => {
                         </div>
                     ))}
                 </div>
-
-
             </div>
         </section>
     );

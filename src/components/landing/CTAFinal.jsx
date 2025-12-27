@@ -1,16 +1,19 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/CTAFinal.css';
 
 const CTAFinal = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="cta-final">
             <div className="container">
-                <h2 className="cta-title">Comienza tu transformación hoy</h2>
+                <h2 className="cta-title">{t('ctaFinal.title')}</h2>
                 <p className="cta-text">
-                    Únete a miles de personas que ya están construyendo hábitos sostenibles
+                    {t('ctaFinal.text')}
                 </p>
-                <button className="cta-button">Descargar Frutia</button>
-                <p className="cta-note">Disponible en iOS y Android</p>
+                <button className="cta-button">{t('ctaFinal.button')}</button>
+                <p className="cta-note">{t('ctaFinal.note')}</p>
             </div>
         </section>
     );

@@ -103,14 +103,11 @@
 .mascot-img {
     width: 100%;
     max-width: 400px;
-    /* Antes: 500px */
-    /* Aumentado de 400px a 500px */
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.2));
-    /* Sombra más pronunciada */
-    animation: mascotFadeIn 0.4s ease-in-out;
-    transition: transform 0.3s ease;
+    /* CAMBIO: Transición suave en lugar de animación abrupta */
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease;
 }
 
 .mascot-img:hover {
@@ -118,17 +115,7 @@
     /* Efecto hover más pronunciado */
 }
 
-@keyframes mascotFadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
 
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
 
 .pref-change-text {
     text-align: center;

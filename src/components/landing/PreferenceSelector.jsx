@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../styles/PreferenceSelector.css';
 
 const PreferenceSelector = () => {
-    const [selectedPreference, setSelectedPreference] = useState('cercano');
+    const [selectedPreference, setSelectedPreference] = useState('motivador');
     const scrollContainerRef = useRef(null);
     const autoScrollInterval = useRef(null);
 
@@ -62,30 +62,6 @@ const PreferenceSelector = () => {
     const preferencesArray = Object.keys(preferences);
     const currentPref = preferences[selectedPreference];
 
-    // Auto-scroll y auto-selección cada 5 segundos
-    useEffect(() => {
-        autoScrollInterval.current = setInterval(() => {
-            const currentIndex = preferencesArray.indexOf(selectedPreference);
-            const nextIndex = (currentIndex + 1) % preferencesArray.length;
-            const nextPref = preferencesArray[nextIndex];
-            setSelectedPreference(nextPref);
-
-            // Scroll automático al siguiente card
-            if (scrollContainerRef.current) {
-                const cardWidth = 280 + 32; // width + gap
-                scrollContainerRef.current.scrollTo({
-                    left: nextIndex * cardWidth,
-                    behavior: 'smooth'
-                });
-            }
-        }, 5000); // Cambia cada 5 segundos
-
-        return () => {
-            if (autoScrollInterval.current) {
-                clearInterval(autoScrollInterval.current);
-            }
-        };
-    }, [selectedPreference, preferencesArray]);
 
     // Detener auto-scroll cuando el usuario interactúa
     const handleUserInteraction = (key) => {
@@ -216,7 +192,6 @@ const PreferenceSelector = () => {
                     ))}
                 </div>
 
-                <p className="pref-footer-text">Cambia automáticamente cada 5 segundos</p>
             </div>
         </section>
     );

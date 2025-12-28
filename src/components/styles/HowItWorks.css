@@ -442,6 +442,8 @@
     }
 
     .step-card {
+        margin-top: 40px;
+        /* Dar espacio para el número */
         padding: 1.5rem;
         gap: 1.5rem;
     }
@@ -456,10 +458,16 @@
 
     .step-dot {
         left: 1rem;
+        top: -25px;
+        /* Mover hacia arriba */
+
     }
 
     .step-line {
         left: 1rem;
+        top: 25px;
+        /* Ajustar inicio de línea */
+
     }
 
     .dot-number {
@@ -486,6 +494,12 @@
         padding: 0 1rem;
     }
 
+    .step-dot {
+        left: 0.5rem;
+        top: -30px;
+        /* Más arriba en pantallas muy pequeñas */
+    }
+
     .section-badge {
         font-size: 0.75rem;
         padding: 0.4rem 1rem;
@@ -495,13 +509,27 @@
         font-size: 1.75rem;
     }
 
+    .dot-number {
+        width: 45px;
+        height: 45px;
+        font-size: 1.25rem;
+    }
+
     .step-card {
+        margin-top: 45px;
         padding: 1.25rem;
     }
 
     .step-title {
         font-size: 1.25rem;
     }
+
+    .step-line {
+        left: 0.5rem;
+        top: 20px;
+    }
+
+
 
     .step-text {
         font-size: 0.95rem;

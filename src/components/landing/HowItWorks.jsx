@@ -29,7 +29,7 @@ const HowItWorks = () => {
                 <div className="section-header">
                     <span className="section-badge">{t('howItWorks.badge')}</span>
                     <h2 className="section-title">
-                        {t('howItWorks.title')} <span className="highlight-red">Frutia</span>?
+                        {t('howItWorks.title')} <span className="highlight-red">FRUTIA WORK</span>?
                     </h2>
                     <p className="section-subtitle">
                         {t('howItWorks.subtitle')}

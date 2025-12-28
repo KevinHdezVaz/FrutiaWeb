@@ -63,29 +63,31 @@ const PreferenceSelector = () => {
     const preferencesArray = Object.keys(preferences);
     const currentPref = preferences[selectedPreference];
 
+    // Función para centrar el card seleccionado
+    const scrollToCard = (index) => {
+        if (scrollContainerRef.current) {
+            const container = scrollContainerRef.current;
+            const cardWidth = 220; // Ancho del card
+            const gap = 32; // 2rem gap = 32px
+            const totalCardWidth = cardWidth + gap;
+
+            // Calcular posición para centrar el card
+            const scrollPosition = (index * totalCardWidth) - (container.offsetWidth / 2) + (cardWidth / 2);
+
+            container.scrollTo({
+                left: Math.max(0, scrollPosition),
+                behavior: 'smooth'
+            });
+        }
+    };
+
     const handleUserInteraction = (key) => {
         if (autoScrollInterval.current) {
             clearInterval(autoScrollInterval.current);
         }
         setSelectedPreference(key);
-    };
-
-    const scrollLeft = () => {
-        if (scrollContainerRef.current) {
-            scrollContainerRef.current.scrollBy({
-                left: -312,
-                behavior: 'smooth'
-            });
-        }
-    };
-
-    const scrollRight = () => {
-        if (scrollContainerRef.current) {
-            scrollContainerRef.current.scrollBy({
-                left: 312,
-                behavior: 'smooth'
-            });
-        }
+        const index = preferencesArray.indexOf(key);
+        scrollToCard(index);
     };
 
     const goToPrevious = () => {
@@ -95,7 +97,7 @@ const PreferenceSelector = () => {
         const currentIndex = preferencesArray.indexOf(selectedPreference);
         const prevIndex = currentIndex === 0 ? preferencesArray.length - 1 : currentIndex - 1;
         setSelectedPreference(preferencesArray[prevIndex]);
-        scrollLeft();
+        scrollToCard(prevIndex);
     };
 
     const goToNext = () => {
@@ -105,7 +107,7 @@ const PreferenceSelector = () => {
         const currentIndex = preferencesArray.indexOf(selectedPreference);
         const nextIndex = (currentIndex + 1) % preferencesArray.length;
         setSelectedPreference(preferencesArray[nextIndex]);
-        scrollRight();
+        scrollToCard(nextIndex);
     };
 
     return (
@@ -172,11 +174,14 @@ const PreferenceSelector = () => {
                 </div>
 
                 <div className="pref-dots">
-                    {Object.keys(preferences).map((key) => (
+                    {Object.keys(preferences).map((key, index) => (
                         <span
                             key={key}
                             className={`dot ${selectedPreference === key ? 'active' : ''}`}
-                            onClick={() => handleUserInteraction(key)}
+                            onClick={() => {
+                                handleUserInteraction(key);
+                                scrollToCard(index);
+                            }}
                         ></span>
                     ))}
                 </div>

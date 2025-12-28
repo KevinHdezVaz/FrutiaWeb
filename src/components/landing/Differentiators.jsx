@@ -21,7 +21,6 @@ const Differentiators = () => {
                 {/* Cards */}
                 <div className="diff-grid">
                     <div className="diff-card animate-on-load" style={{ '--order': 3 }}>
-                        <div className="card-icon">🌱</div>
                         <h3 className="card-title">{t('differentiators.card1.title')}</h3>
                         <p className="card-description">
                             {t('differentiators.card1.description')}
@@ -29,7 +28,6 @@ const Differentiators = () => {
                     </div>
 
                     <div className="diff-card animate-on-load" style={{ '--order': 4 }}>
-                        <div className="card-icon">📈</div>
                         <h3 className="card-title">{t('differentiators.card2.title')}</h3>
                         <p className="card-description">
                             {t('differentiators.card2.description')}
@@ -37,7 +35,6 @@ const Differentiators = () => {
                     </div>
 
                     <div className="diff-card animate-on-load" style={{ '--order': 5 }}>
-                        <div className="card-icon">🧠</div>
                         <h3 className="card-title">{t('differentiators.card3.title')}</h3>
                         <p className="card-description">
                             {t('differentiators.card3.description')}

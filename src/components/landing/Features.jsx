@@ -8,27 +8,22 @@ const Features = () => {
 
     const features = [
         {
-            icon: "🎯",
             title: t('features.feature1.title'),
             description: t('features.feature1.description')
         },
         {
-            icon: "🍽️",
             title: t('features.feature2.title'),
             description: t('features.feature2.description')
         },
         {
-            icon: "🔄",
             title: t('features.feature3.title'),
             description: t('features.feature3.description')
         },
         {
-            icon: "💬",
             title: t('features.feature4.title'),
             description: t('features.feature4.description')
         },
         {
-            icon: "📊",
             title: t('features.feature5.title'),
             description: t('features.feature5.description')
         }

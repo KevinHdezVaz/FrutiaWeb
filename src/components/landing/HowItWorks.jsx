@@ -48,7 +48,6 @@ const HowItWorks = () => {
                         <div className="step-card">
                             <div className="step-content">
                                 <div className="step-header">
-                                    <div className="step-icon">🎯</div>
                                     <h3 className="step-title">{t('howItWorks.step1.title')}</h3>
                                 </div>
                                 <p className="step-text">
@@ -85,7 +84,6 @@ const HowItWorks = () => {
                         <div className="step-card">
                             <div className="step-content">
                                 <div className="step-header">
-                                    <div className="step-icon">🤝</div>
                                     <h3 className="step-title">{t('howItWorks.step2.title')}</h3>
                                 </div>
                                 <p className="step-text">

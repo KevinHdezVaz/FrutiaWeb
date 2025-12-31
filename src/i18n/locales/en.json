@@ -23,6 +23,7 @@
         "subtitle": "The plan doesn't change. What changes is how Frutia talks to you and guides you.",
         "changeText": "You can change it whenever you want.",
         "previous": "Previous",
+        "selectYourStyle": "Select your style",
         "next": "Next",
         "motivador": {
             "name": "Motivator",
@@ -91,23 +92,23 @@
         "questions": {
             "q1": {
                 "question": "Does Frutia replace a nutritionist?",
-                "answer": "Frutia is designed to accompany you daily with planning, tracking and nutritional education. For specific medical conditions and/or physical changes (gaining muscle or losing fat) it's ideal to complement it with constant monitoring."
+                "answer": "Frutia isn’t meant to replace a clinical nutrition professional — it acts as your digital nutrition coach for everyday decisions. It analyzes your goals, habits, preferences and food availability to create and adjust personalized plans. When changes happen, AI adapts your plan automatically. For medical conditions or clinical needs, professional guidance is still essential. In those cases, Frutia works as a smart companion between visits."
             },
             "q2": {
-                "question": "What if I don't have certain foods?",
-                "answer": "You can work with options and substitutions. The idea is to adapt to what you have available."
+                "question": "What if I don't have certain foods from the plan?",
+                "answer": "No problem. Frutia adapts to what you actually have. It offers equivalent substitutions across macronutrients so you can build meals flexibly. If something is missing — or you just want to swap — AI reorganizes your meal in seconds while keeping your goals intact."
             },
             "q3": {
-                "question": "Can I use it if I have restrictions (lactose-free, etc.)?",
-                "answer": "Yes. The app can adapt options and suggestions according to your preferences/restrictions."
+                "question": "Can I use Frutia if I have dietary restrictions?",
+                "answer": "Yes. You can register allergies, intolerances and preferences from the start. Frutia automatically excludes restricted foods and intelligently rebuilds your plan with safe and practical alternatives so you can keep progressing."
             },
             "q4": {
-                "question": "How does Frutia handle when I 'go off' the plan?",
-                "answer": "It proposes realistic adjustments for the rest of the day (without punishments), to maintain progress."
+                "question": "What happens if I go off the plan?",
+                "answer": "Frutia doesn’t punish you. If you have an off-plan meal, the AI analyzes it and adjusts the rest of the day to help balance calories and macros. It turns detours into smart adjustments so you can move forward without guilt."
             },
             "q5": {
                 "question": "Can I export my plan?",
-                "answer": "Yes: history and PDF download (ideal for coaches or for your own tracking)."
+                "answer": "Yes — you can review your history and download a PDF, ideal for your own tracking or to share with a coach or nutritionist."
             }
         }
     },
@@ -120,6 +121,7 @@
     "howItWorks": {
         "badge": "PROCESS",
         "title": "HOW DOES",
+        "brandName": "FRUTIA WORK",
         "subtitle": "Three simple steps to transform your relationship with food",
         "step1": {
             "title": "We define your path",

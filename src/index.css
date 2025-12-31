@@ -16,6 +16,71 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Global Colors */
+  --primary: #FF4D4D;
+  --primary-light: #FF8A80;
+  --primary-dark: #ea7474;
+  --text-dark: #0f172a;
+  --gray: #64748b;
+  --bg-light: #fafafa;
+
+  /* Animation Tokens */
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+  --transition-fast: 0.3s var(--ease-out-expo);
+  --transition-normal: 0.6s var(--ease-out-expo);
+  --transition-slow: 1.2s var(--ease-out-expo);
+}
+
+/* Scroll Reveal System */
+.reveal {
+  opacity: 0;
+  transition: all var(--transition-slow);
+}
+
+.reveal-up {
+  transform: translateY(40px);
+}
+
+.reveal-left {
+  transform: translateX(-40px);
+}
+
+.reveal-right {
+  transform: translateX(40px);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Staggered Delay Helpers */
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-400 {
+  transition-delay: 400ms;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
+}
+
+/* Global Utility Classes */
+.highlight-red,
+.highlight {
+  color: var(--primary);
 }
 
 /* FIX PRINCIPAL: Eliminar fondo negro y centrado */

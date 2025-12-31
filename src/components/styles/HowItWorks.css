@@ -1,12 +1,5 @@
 /* HowItWorks.css - Professional UI/UX */
-:root {
-    --primary: #FF4D4D;
-    --primary-light: #FF8A80;
-    --primary-dark: #ea7474;
-    --text-dark: #0f172a;
-    --gray: #64748b;
-    --bg-light: #fafafa;
-}
+
 
 .how-it-works {
     padding: 4rem 0;
@@ -15,6 +8,8 @@
     position: relative;
     overflow: hidden;
 }
+
+
 
 .container {
     max-width: 1200px;
@@ -63,10 +58,7 @@
     line-height: 1.2;
 }
 
-.highlight-red {
-    color: var(--primary);
-    position: relative;
-}
+
 
 .section-subtitle {
     font-size: 1.25rem;

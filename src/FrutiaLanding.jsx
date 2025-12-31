@@ -9,8 +9,11 @@ import FAQ from './components/landing/FAQ';
 import CTAFinal from './components/landing/CTAFinal';
 import Footer from './components/landing/Footer';
 import Features from './components/landing/Features';
+import useScrollReveal from './hooks/useScrollReveal';
 
 const FrutiaLanding = () => {
+    useScrollReveal();
+
     return (
         <div className="landing-page">
             <Navbar />

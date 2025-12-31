@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-grid">
                     {/* Columna 1: Producto */}
-                    <div className="footer-col">
+                    <div className="footer-col reveal reveal-up delay-100">
                         <h3>{t('footer.product.title')}</h3>
                         <ul>
                             <li><a href="#que-es">{t('footer.product.home')}</a></li>
@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
 
                     {/* Columna 2: Descarga */}
-                    <div className="footer-col">
+                    <div className="footer-col reveal reveal-up delay-200">
                         <h3>{t('footer.download.title')}</h3>
                         <ul>
                             <li><a href="#" className="store-link"><FaApple /> App Store</a></li>
@@ -31,7 +31,7 @@ const Footer = () => {
                     </div>
 
                     {/* Columna 3: Soporte */}
-                    <div className="footer-col">
+                    <div className="footer-col reveal reveal-up delay-300">
                         <h3>{t('footer.support.title')}</h3>
                         <ul>
                             <li><a href="#soporte">{t('footer.support.faq')}</a></li>
@@ -41,7 +41,7 @@ const Footer = () => {
                     </div>
 
                     {/* Columna 4: Legal */}
-                    <div className="footer-col">
+                    <div className="footer-col reveal reveal-up delay-400">
                         <h3>{t('footer.legal.title')}</h3>
                         <ul>
                             <li><a href="#">{t('footer.legal.terms')}</a></li>

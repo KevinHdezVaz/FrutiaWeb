@@ -26,10 +26,10 @@ const HowItWorks = () => {
         <section className="how-it-works" id="how-it-works">
             <div className="container">
                 {/* Header */}
-                <div className="section-header">
+                <div className="section-header reveal reveal-up">
                     <span className="section-badge">{t('howItWorks.badge')}</span>
                     <h2 className="section-title">
-                        {t('howItWorks.title')} <span className="highlight-red">FRUTIA WORK</span>?
+                        {t('howItWorks.title')} <span className="highlight-red">{t('howItWorks.brandName')}</span>?
                     </h2>
                     <p className="section-subtitle">
                         {t('howItWorks.subtitle')}
@@ -39,7 +39,7 @@ const HowItWorks = () => {
                 {/* Timeline */}
                 <div className="timeline">
                     {/* Paso 1 */}
-                    <div className="step">
+                    <div className="step reveal reveal-up">
                         <div className="step-line"></div>
                         <div className="step-dot">
                             <span className="dot-number">1</span>
@@ -75,7 +75,7 @@ const HowItWorks = () => {
                     </div>
 
                     {/* Paso 2 */}
-                    <div className="step reverse">
+                    <div className="step reverse reveal reveal-up">
                         <div className="step-line"></div>
                         <div className="step-dot">
                             <span className="dot-number">2</span>
@@ -111,7 +111,7 @@ const HowItWorks = () => {
                     </div>
 
                     {/* Paso 3 */}
-                    <div className="step">
+                    <div className="step reveal reveal-up">
                         <div className="step-dot">
                             <span className="dot-number">3</span>
                         </div>

@@ -7,7 +7,7 @@ const CTAFinal = () => {
 
     return (
         <section className="cta-final">
-            <div className="container">
+            <div className="container reveal reveal-up">
                 <h2 className="cta-title">{t('ctaFinal.title')}</h2>
                 <p className="cta-text">
                     {t('ctaFinal.text')}

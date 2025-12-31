@@ -8,8 +8,8 @@
         "download": "Descargar app"
     },
     "hero": {
-        "title": "Tu nutricionista personal",
-        "highlight": "en el bolsillo",
+        "title": "TU NUTRICIONISTA",
+        "highlight": "AL BOLSILLO",
         "subtitle": "Tu nutricionista 24/7 que te guía, ajusta y celebra cada logro contigo.",
         "watch": "Ver cómo funciona",
         "badge": "4.9 ★ en App Store",
@@ -23,6 +23,7 @@
         "subtitle": "No cambia el plan. Cambia la forma en que Frutia te habla y te guía.",
         "changeText": "Puedes cambiarlo cuando quieras.",
         "previous": "Anterior",
+        "selectYourStyle": "Selecciona tu estilo",
         "next": "Siguiente",
         "motivador": {
             "name": "Motivador",
@@ -87,7 +88,7 @@
             "cookies": "Aviso de Cookies"
         },
         "copyright": "© 2025 Frutia. Todos los derechos reservados.",
-        "tagline": "Tu nutricionista en el bolsillo"
+        "tagline": "Tu nutricionista al bolsillo"
     },
     "faq": {
         "badge": "SOPORTE",
@@ -97,19 +98,19 @@
         "questions": {
             "q1": {
                 "question": "¿Frutia reemplaza a un nutricionista?",
-                "answer": "No. Frutia es tu acompañante diario: te ayuda a planificar, entender tus hábitos y mantener el rumbo. Para diagnósticos, lesiones, enfermedades o cambios físicos importantes (ganar músculo, bajar grasa de forma controlada), lo ideal es complementarlo con el seguimiento de un profesional."
+                "answer": "FRUTIA no busca reemplazar la figura de un nutricionista clínico, pero sí actúa como tu nutricionista digital en el día a día. Analiza tu información —objetivo, hábitos, preferencias y disponibilidad de alimentos— para crear y ajustar planes personalizados según tu contexto real. Si necesitas adaptaciones o presentas cambios, la IA reorganiza tu plan automáticamente. Sin embargo, para diagnósticos médicos o situaciones clínicas específicas, siempre será fundamental el acompañamiento de un profesional; en esos casos, FRUTIA funciona como un complemento inteligente entre consultas."
             },
             "q2": {
                 "question": "¿Qué pasa si no tengo algunos alimentos del plan?",
-                "answer": "No pasa nada. Frutia te sugiere reemplazos equivalentes para que sigas el plan con lo que tengas disponible, sin complicarte."
+                "answer": "No pasa nada. FRUTIA está diseñada para adaptarse a tu realidad, no para imponerte un plan rígido. La app trabaja desde el inicio con los alimentos que eliges y tienes disponibles, ofreciéndote opciones equivalentes por macronutriente para que armes tus comidas con flexibilidad. Si un día te falta algo o quieres cambiarlo, la IA reorganiza tu comida en segundos manteniendo tus macros y tu objetivo intactos."
             },
             "q3": {
                 "question": "¿Puedo usar Frutia si tengo restricciones alimentarias?",
-                "answer": "Sí. Puedes indicar tus preferencias o restricciones (por ejemplo: sin lactosa, sin gluten o vegetariano) y Frutia adaptará las sugerencias a tus necesidades."
+                "answer": "Sí. FRUTIA se adapta a alergias, intolerancias y preferencias desde el inicio, excluyendo automáticamente cualquier alimento que no debas o no quieras consumir. Además de filtrar, la IA reconstruye tu plan de forma inteligente, proponiendo alternativas seguras y equivalentes para que avances sin comprometer tu progreso."
             },
             "q4": {
                 "question": "¿Qué pasa si un día me salgo del plan?",
-                "answer": "Frutia te propone ajustes simples y realistas para el resto del día. Nada de castigos: el objetivo es que sigas avanzando con equilibrio."
+                "answer": "No pasa nada. FRUTIA entiende que la nutrición real no es perfecta. Si comes algo fuera del plan, la IA analiza lo que ingeriste y reajusta el resto del día para equilibrar calorías y macronutrientes. No castiga: transforma los desvíos en ajustes inteligentes para que sigas avanzando sin culpa."
             },
             "q5": {
                 "question": "¿Puedo exportar o compartir mi plan?",
@@ -120,6 +121,7 @@
     "howItWorks": {
         "badge": "PROCESO",
         "title": "¿Cómo funciona",
+        "brandName": "FRUTIA",
         "subtitle": "Tres pasos simples para transformar tu relación con la comida",
         "step1": {
             "title": "Definimos tu rumbo",

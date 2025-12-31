@@ -1,10 +1,5 @@
 /* FAQ.css - Professional */
-:root {
-    --primary: #FF4D4D;
-    --primary-dark: #ea7474;
-    --text-dark: #0f172a;
-    --gray: #64748b;
-}
+
 
 .faq-section {
     padding: 4rem 0;
@@ -44,9 +39,7 @@
     line-height: 1.2;
 }
 
-.highlight-red {
-    color: var(--primary);
-}
+
 
 .section-subtitle {
     font-size: 1.25rem;

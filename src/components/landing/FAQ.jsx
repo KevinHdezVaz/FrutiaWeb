@@ -37,7 +37,7 @@ const FAQ = () => {
         <section className="faq-section" id="soporte">
             <div className="container">
                 {/* Header */}
-                <div className="faq-header">
+                <div className="faq-header reveal reveal-up">
                     <span className="section-badge">{t('faq.badge')}</span>
                     <h2 className="section-title">
                         {t('faq.title')} <span className="highlight-red">{t('faq.titleHighlight')}</span>
@@ -52,7 +52,7 @@ const FAQ = () => {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className={`faq-item ${openIndex === index ? 'active' : ''}`}
+                            className={`faq-item reveal reveal-up delay-${(index + 1) * 100} ${openIndex === index ? 'active' : ''}`}
                             onClick={() => toggleFAQ(index)}
                         >
                             <div className="faq-question">

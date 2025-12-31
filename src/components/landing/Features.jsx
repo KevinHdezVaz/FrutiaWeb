@@ -1,39 +1,48 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaApple, FaGooglePlay } from 'react-icons/fa';
 import '../styles/Features.css';
 
 const Features = () => {
     const { t } = useTranslation();
+    const observerRef = useRef(null);
 
-    const features = [
-        {
-            title: t('features.feature1.title'),
-            description: t('features.feature1.description')
-        },
-        {
-            title: t('features.feature2.title'),
-            description: t('features.feature2.description')
-        },
-        {
-            title: t('features.feature3.title'),
-            description: t('features.feature3.description')
-        },
-        {
-            title: t('features.feature4.title'),
-            description: t('features.feature4.description')
-        },
-        {
-            title: t('features.feature5.title'),
-            description: t('features.feature5.description')
-        }
+    useEffect(() => {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        observerRef.current = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        const elements = document.querySelectorAll('.reveal');
+        elements.forEach(el => observerRef.current.observe(el));
+
+        return () => {
+            if (observerRef.current) {
+                observerRef.current.disconnect();
+            }
+        };
+    }, []);
+
+    const screenshots = [
+        '/images/screen1.png',
+        '/images/screen2.png',
+        '/images/screen3.png',
+        '/images/screen4.png'
     ];
 
     return (
         <section className="features-section" id="features">
             <div className="container">
                 {/* Header */}
-                <div className="features-header">
+                <div className="features-header reveal fade-up">
                     <span className="section-badge">{t('features.badge')}</span>
                     <h2 className="section-title">
                         {t('features.title')} <span className="highlight-red">{t('features.titleHighlight')}</span>
@@ -43,26 +52,31 @@ const Features = () => {
                     </p>
                 </div>
 
-                {/* Features Grid */}
-                <div className="features-grid">
-                    {features.map((feature, index) => (
-                        <div key={index} className="feature-card">
-                            <div className="feature-icon">{feature.icon}</div>
-                            <h3 className="feature-title">{feature.title}</h3>
-                            <p className="feature-description">{feature.description}</p>
+                {/* Screenshots Grid */}
+                <div className="app-screenshots">
+                    {screenshots.map((screenshot, index) => (
+                        <div
+                            key={index}
+                            className={`screenshot-card reveal fade-scale`}
+                            style={{ '--delay': `${index * 0.15}s` }}
+                        >
+                            <img
+                                src={screenshot}
+                                alt={`Feature ${index + 1}`}
+                                className="screenshot-image"
+                            />
                         </div>
                     ))}
                 </div>
 
                 {/* Download Section */}
-                <div className="download-section">
+                <div className="download-section reveal fade-up">
                     <h3 className="download-title">{t('features.downloadTitle')}</h3>
                     <div className="download-badges">
-
                         <a href="https://apps.apple.com/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="badge-link apple"
+                            className="badge-link apple reveal fade-left"
                         >
                             <FaApple className="store-icon" />
                             <div className="store-text">
@@ -71,12 +85,10 @@ const Features = () => {
                             </div>
                         </a>
 
-
-
                         <a href="https://play.google.com/store/apps"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="badge-link google"
+                            className="badge-link google reveal fade-right"
                         >
                             <FaGooglePlay className="store-icon" />
                             <div className="store-text">
@@ -84,7 +96,6 @@ const Features = () => {
                                 <span className="store-main">Google Play</span>
                             </div>
                         </a>
-
                     </div>
                 </div>
             </div>
@@ -92,4 +103,4 @@ const Features = () => {
     );
 };
 
-export default Features;    
+export default Features;

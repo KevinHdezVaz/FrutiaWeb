@@ -30,7 +30,7 @@
 }
 
 .section-title {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-size: clamp(2.1rem, 4.5vw, 2.8rem);
     font-weight: 800;
     color: var(--text-dark);
     margin-bottom: 1rem;
@@ -281,7 +281,7 @@
 
 @media (max-width: 480px) {
     .section-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .section-subtitle {

@@ -150,29 +150,33 @@
     },
     "differentiators": {
         "title": "Why",
+        "brandName": "FRUTIA",
         "titleEnd": "is different",
-        "subtitle": "It's not a calorie counter. It's a system that actually works.",
+        "subtitle": "It's not a calorie counter; it's designed to help you move forward even when the plan fails.",
         "card1": {
-            "title": "Sustainable habits",
-            "description": "Real health is built day by day, not with extreme diets."
+            "title": "Criteria",
+            "description": "Frutia doesn't apply rigid rules.<br />It decides based on your goal, your context, and your day.<br />It doesn't punish mistakes: it adjusts the course."
         },
         "card2": {
-            "title": "Visible results",
-            "description": "Measurable progress in fat, energy and wellbeing."
+            "title": "Support",
+            "description": "It doesn't disappear after giving you a plan.<br />It's there when you doubt, improvise, or need to decide fast."
         },
         "card3": {
-            "title": "Real-time guidance",
-            "description": "Smart decisions right when you need them."
+            "title": "Continuity",
+            "description": "It doesn't depend on extreme discipline or perfect weeks.<br />It helps you keep moving forward even when a day doesn't go as expected."
         },
-        "statement": {
-            "bold": "Logging meals doesn't change anything.",
-            "highlight": "intervenes, guides and sustains",
-            "end": "real decisions for lasting results."
+        "statement": "Frutia is not just another app",
+        "comparison1": {
+            "others": "Other apps record.",
+            "frutia": "Frutia interprets."
         },
-        "features": {
-            "feature1": "Intervenes in the moment",
-            "feature2": "Adapts to your life",
-            "feature3": "Lasting results"
+        "comparison2": {
+            "others": "Others show you numbers.",
+            "frutia": "Frutia tells you what to do with them."
+        },
+        "finalStatement": {
+            "bold": "Logging what you eat changes nothing.",
+            "subtext": "What changes is having the criteria when things get messy.<br />Frutia intervenes, guides, and keeps you on track even when the day isn't perfect."
         }
     },
     "features": {

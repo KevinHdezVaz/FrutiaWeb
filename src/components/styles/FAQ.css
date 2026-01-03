@@ -1,5 +1,4 @@
-/* FAQ.css - Professional */
-
+/* FAQ.css - Sin animaciones raras, solo desplegable simple */
 
 .faq-section {
     padding: 4rem 0;
@@ -32,14 +31,16 @@
 }
 
 .section-title {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-size: clamp(2.1rem, 4.5vw, 2.8rem);
     font-weight: 800;
     color: var(--text-dark);
     margin-bottom: 1rem;
     line-height: 1.2;
 }
 
-
+.highlight-red {
+    color: var(--primary);
+}
 
 .section-subtitle {
     font-size: 1.25rem;
@@ -57,7 +58,6 @@
     background: white;
     border-radius: 1rem;
     border: 2px solid #e5e7eb;
-    overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -113,15 +113,14 @@
     transform: rotate(180deg);
 }
 
+/* Respuesta - SIN max-height, SIN overflow hidden */
 .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+    display: none;
+    padding: 0 2rem 1.5rem 2rem;
 }
 
 .faq-item.active .faq-answer {
-    max-height: 300px;
-    padding: 0 2rem 1.5rem 2rem;
+    display: block;
 }
 
 .faq-answer p {
@@ -179,7 +178,7 @@
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .section-subtitle {

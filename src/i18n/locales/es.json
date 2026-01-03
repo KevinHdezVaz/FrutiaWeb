@@ -150,29 +150,33 @@
     },
     "differentiators": {
         "title": "Por qué",
+        "brandName": "FRUTIA",
         "titleEnd": "es diferente",
-        "subtitle": "No es un contador de calorías. Es un sistema que realmente funciona.",
+        "subtitle": "No es un contador de calorías, está pensada para ayudarte a avanzar incluso cuando el plan falla.",
         "card1": {
-            "title": "Hábitos sostenibles",
-            "description": "Salud real se construye día a día, no en dietas extremas."
+            "title": "Criterio",
+            "description": "Frutia no aplica reglas rígidas.<br />Decide según tu objetivo, tu contexto y tu día.<br />No castiga errores: ajusta el rumbo."
         },
         "card2": {
-            "title": "Resultados visibles",
-            "description": "Progreso medible en grasa, energía y bienestar."
+            "title": "Acompañamiento",
+            "description": "No desaparece después de darte un plan.<br />Está presente cuando dudas, improvisas o necesitas decidir rápido."
         },
         "card3": {
-            "title": "Guía en tiempo real",
-            "description": "Decisiones inteligentes justo cuando las necesitas."
+            "title": "Continuidad",
+            "description": "No depende de disciplina extrema ni de semanas perfectas.<br />Te ayuda a seguir avanzando incluso cuando un día no sale como esperabas."
         },
-        "statement": {
-            "bold": "Registrar comidas no cambia nada.",
-            "highlight": "interviene, guía y sostiene",
-            "end": "decisiones reales para resultados que duran."
+        "statement": "Frutia no es un app mas",
+        "comparison1": {
+            "others": "Otras apps registran.",
+            "frutia": "Frutia interpreta."
         },
-        "features": {
-            "feature1": "Interviene en el momento",
-            "feature2": "Se adapta a tu vida",
-            "feature3": "Resultados duraderos"
+        "comparison2": {
+            "others": "Otras te muestran números.",
+            "frutia": "Frutia te dice qué hacer con ellos."
+        },
+        "finalStatement": {
+            "bold": "Registrar lo que comes no cambia nada.",
+            "subtext": "Lo que cambia es tener criterio cuando el contexto se desordena.<br />Frutia interviene, orienta y te mantiene en rumbo incluso cuando el día no sale perfecto."
         }
     },
     "features": {

@@ -13,7 +13,7 @@ const Differentiators = () => {
                 <div className="diff-header reveal reveal-up">
                     <div className="header-badge">
                         <span className="badge-icon">✨</span>
-                        <span className="badge-text">La Diferencia</span>
+                        <span className="badge-text">{t('differentiators.badge')}</span>
                     </div>
                     <h2 className="diff-main-title">
                         {t('differentiators.title')} <span className="highlight-red">{t('differentiators.brandName')}</span> {t('differentiators.titleEnd')}
@@ -80,14 +80,14 @@ const Differentiators = () => {
                 {/* Comparison con diseño split */}
                 <div className="comparison-split reveal reveal-up">
                     <div className="split-header">
-                        <h3>¿Por qué elegir Frutia?</h3>
+                        <h3>{t('differentiators.title2')}</h3>
                     </div>
 
                     <div className="split-container">
                         <div className="split-side negative">
                             <div className="split-label">
                                 <span className="label-icon">❌</span>
-                                <span>Otras Apps</span>
+                                <span>{t('differentiators.others')}</span>
                             </div>
                             <ul className="split-list">
                                 <li>

@@ -28,7 +28,7 @@ const PreferenceSelector = () => {
             views: [
                 { id: 'front', image: '/images/frutia_directa.jpeg', label: 'Frente' },
                 { id: 'profile', image: '/images/frutia_directa_profile.png', label: 'Perfil' },
-                { id: 'back', image: '/images/frutia_directa_back.png', label: 'Atrás' }
+                { id: 'back', image: '/images/frutia_directa_back2.png', label: 'Atrás' }
             ],
         },
         cercano: {

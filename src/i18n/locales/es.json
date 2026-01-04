@@ -149,10 +149,13 @@
         }
     },
     "differentiators": {
+        "badge": "La Diferencia",
         "title": "Por qué",
+        "title2": "¿Por qué elegir Frutia?",
         "brandName": "FRUTIA",
         "titleEnd": "es diferente",
         "subtitle": "No es un contador de calorías, está pensada para ayudarte a avanzar incluso cuando el plan falla.",
+        "others": "Otras Apps",
         "card1": {
             "title": "Criterio",
             "description": "Frutia no aplica reglas rígidas.<br />Decide según tu objetivo, tu contexto y tu día.<br />No castiga errores: ajusta el rumbo."

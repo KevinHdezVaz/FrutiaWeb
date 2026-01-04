@@ -149,10 +149,13 @@
         }
     },
     "differentiators": {
+        "badge": "The Difference",
         "title": "Why",
         "brandName": "FRUTIA",
+        "title2": "Why choose Frutia?",
         "titleEnd": "is different",
         "subtitle": "It's not a calorie counter; it's designed to help you move forward even when the plan fails.",
+        "others": "Other Apps",
         "card1": {
             "title": "Criteria",
             "description": "Frutia doesn't apply rigid rules.<br />It decides based on your goal, your context, and your day.<br />It doesn't punish mistakes: it adjusts the course."

@@ -92,7 +92,7 @@
         "questions": {
             "q1": {
                 "question": "Does Frutia replace a nutritionist?",
-                "answer": "Frutia isn’t meant to replace a clinical nutrition professional — it acts as your digital nutrition coach for everyday decisions. It analyzes your goals, habits, preferences and food availability to create and adjust personalized plans. When changes happen, AI adapts your plan automatically. For medical conditions or clinical needs, professional guidance is still essential. In those cases, Frutia works as a smart companion between visits."
+                "answer": "Frutia isn't meant to replace a clinical nutrition professional — it acts as your digital nutrition coach for everyday decisions. It analyzes your goals, habits, preferences and food availability to create and adjust personalized plans. When changes happen, AI adapts your plan automatically. For medical conditions or clinical needs, professional guidance is still essential. In those cases, Frutia works as a smart companion between visits."
             },
             "q2": {
                 "question": "What if I don't have certain foods from the plan?",
@@ -104,11 +104,23 @@
             },
             "q4": {
                 "question": "What happens if I go off the plan?",
-                "answer": "Frutia doesn’t punish you. If you have an off-plan meal, the AI analyzes it and adjusts the rest of the day to help balance calories and macros. It turns detours into smart adjustments so you can move forward without guilt."
+                "answer": "Frutia doesn't punish you. If you have an off-plan meal, the AI analyzes it and adjusts the rest of the day to help balance calories and macros. It turns detours into smart adjustments so you can move forward without guilt."
             },
             "q5": {
                 "question": "Can I export my plan?",
                 "answer": "Yes — you can review your history and download a PDF, ideal for your own tracking or to share with a coach or nutritionist."
+            },
+            "q6": {
+                "question": "Is Frutia right for me?",
+                "answer": "Yes. Frutia is designed for real people, not just athletes or those seeking extreme physical transformations. The app works both for those who train and for those who simply want to feel better, improve their health, and organize their nutrition without complications. Frutia adapts to different goals and contexts, including people who have struggled to create a meal plan that fits their daily reality. If you have nutritional deficiencies, restrictions, limited time, or simply don't know where to start, Frutia guides you step by step, helping you build a plan that makes sense for you and that you can sustain over time."
+            },
+            "q7": {
+                "question": "How does Frutia create my nutrition plan?",
+                "answer": "Frutia creates your nutrition plan based on who you are and what you actually need, not from a generic template. The app considers your goal, activity level, dietary preferences, restrictions, allergies, and the foods you enjoy or prefer to avoid. With this information, Frutia builds a flexible daily plan with options by macronutrient group, so you can choose meals that fit your tastes and routine. Beyond calories, Frutia prioritizes that your nutrition is functional, sustainable, and coherent with you. If you don't like a food, if you're allergic, or if you need to make changes, the AI adjusts the plan automatically to stay aligned with your wellbeing and goals."
+            },
+            "q8": {
+                "question": "What makes Frutia different from other nutrition apps?",
+                "answer": "The main difference is that Frutia doesn't just track what you eat: it accompanies you and makes decisions with you. While many apps simply count calories or show numbers, Frutia uses artificial intelligence to interpret your context, detect imbalances, and propose practical solutions in real time. If you change a food, go off plan, or your routine shifts, Frutia responds and adjusts. Frutia combines planning, tracking, and continuous support in one place, transforming nutrition into a more flexible, intelligent, and sustainable process."
             }
         }
     },

@@ -13,12 +13,12 @@ const HowItWorks = () => {
             en: '/images/img_crear_plan_ingle.png'
         },
         step2: {
-            es: '/images/img_chat_frutia.png',
-            en: '/images/img_chat_ingle.png'
+            es: '/images/img_chat_frutia.webp',
+            en: '/images/img_chat_ingle.webp'
         },
         step3: {
-            es: '/images/img_racha.png',
-            en: '/images/img_racha_ingle.png'
+            es: '/images/img_racha.webp',
+            en: '/images/img_racha_ingle.webp'
         }
     };
 

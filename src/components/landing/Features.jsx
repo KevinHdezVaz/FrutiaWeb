@@ -4,7 +4,7 @@ import { FaApple, FaGooglePlay } from 'react-icons/fa';
 import '../styles/Features.css';
 
 const Features = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const observerRef = useRef(null);
 
     useEffect(() => {
@@ -31,12 +31,19 @@ const Features = () => {
         };
     }, []);
 
-    const screenshots = [
-        '/images/screen1.png',
-        '/images/screen2.png',
-        '/images/screen3.png',
-        '/images/screen5.png'
-    ];
+    const screenshots = i18n.language.startsWith('en')
+        ? [
+            '/images/screen1_ingles.webp',
+            '/images/screen2_ingles.webp',
+            '/images/screen3_ingles.webp',
+            '/images/screen4_ingles.webp'
+        ]
+        : [
+            '/images/screen1.webp',
+            '/images/screen2.webp',
+            '/images/screen3.webp',
+            '/images/screen5.webp'
+        ];
 
     return (
         <section className="features-section" id="features">

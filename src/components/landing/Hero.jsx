@@ -8,8 +8,8 @@ const Hero = () => {
 
     const images = {
         iphone: {
-            es: '/images/iphoneCaptura.png',
-            en: '/images/img_plan_ingle.png'
+            es: '/images/iphoneCaptura.webp',
+            en: '/images/img_plan_ingle.webp'
         }
     };
 

@@ -23,7 +23,7 @@ const Hero = () => {
                     muted
                     playsInline
                 >
-                    <source src="/images/videoFondoFrutia.mp4" type="video/mp4" />
+                    <source src="/images/videoFondoFrutiaWebb.mp4" type="video/mp4" />
                 </video>
                 <div className="hero-overlay"></div>
                 <div className="hero-container">
@@ -54,7 +54,16 @@ const Hero = () => {
                 </div>
             </div>
 
+            {/* ⭐ AGREGAR VIDEO DE FONDO EN EL FOOTER */}
             <div className="hero-footer reveal reveal-up">
+                <video
+                    className="hero-footer-video"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                >
+                </video>
                 <div className="footer-content">
                     <h2 className="hero-slogan">{t('hero.slogan')}</h2>
                     <p className="hero-subtitle-footer">

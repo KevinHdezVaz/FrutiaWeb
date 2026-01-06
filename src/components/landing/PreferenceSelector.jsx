@@ -13,28 +13,28 @@ const PreferenceSelector = () => {
             description: t('preferences.motivador.description'),
             color: '#FF4D4D',
             gradient: 'linear-gradient(135deg, #FFB3C1 0%, #FFC9D6 50%, #FFE0E8 100%)',
-            video: '/images/frutia_motivador_video.mp4', // ← Tu video aquí
+            video: '/images/frutia_motivador_videoo.mp4', // ← Tu video aquí
         },
         directo: {
             name: t('preferences.directo.name'),
             description: t('preferences.directo.description'),
             color: '#bdb9bdff',
             gradient: 'linear-gradient(135deg, #E8E6E8 0%, #F0EEF0 50%, #F8F6F8 100%)',
-            video: '/images/frutia_directa_video2.mp4',
+            video: '/images/frutia_directa_videoo.mp4',
         },
         cercano: {
             name: t('preferences.cercano.name'),
             description: t('preferences.cercano.description'),
             color: '#FF6B9D',
             gradient: 'linear-gradient(135deg, #FFC0D9 0%, #FFD4E6 50%, #FFE8F2 100%)',
-            video: '/images/frutia_cercana_video.mp4',
+            video: '/images/frutia_cercana_videoo.mp4',
         },
         meAdapto: {
             name: t('preferences.meAdapto.name'),
             description: t('preferences.meAdapto.description'),
             color: '#4c9eafff',
             gradient: 'linear-gradient(135deg, #B8E0E8 0%, #D0EBF0 50%, #E8F5F8 100%)',
-            video: '/images/frutia_meadapto_video.mp4',
+            video: '/images/frutia_meadapto_videoo.mp4',
         },
     };
 

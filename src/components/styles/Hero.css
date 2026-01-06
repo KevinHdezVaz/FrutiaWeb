@@ -1,4 +1,4 @@
-/* Hero.css - Tema oficial de la app */
+/* Hero.css - Tema oficial de la app - VERSIÓN FINAL MEJORADA */
 
 .hero {
     width: 100%;
@@ -8,7 +8,6 @@
 .hero-bg {
     position: relative;
     min-height: 90vh;
-    /* SOLO un background con todo junto */
     background:
         radial-gradient(circle at 20% 50%, rgba(255, 77, 77, 0.03) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(255, 77, 77, 0.03) 0%, transparent 50%),
@@ -21,8 +20,7 @@
             #ffb8b8 100%);
 }
 
-/* Video de fondo */
-/* Video de fondo */
+/* Video de fondo principal */
 .hero-video {
     position: absolute;
     top: 0;
@@ -31,16 +29,14 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
-    opacity: 0.6;
+    /* Opacidad removida para que el video se vea natural */
+    opacity: 1;
 }
 
 /* Overlay sutil para más profundidad */
+/* Overlay removido para vista natural */
 .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 50% 0%, rgba(255, 77, 77, 0.05) 0%, transparent 70%);
-    pointer-events: none;
-    z-index: 1;
+    display: none;
 }
 
 /* Contenedor centrado */
@@ -242,38 +238,59 @@
     font-size: 1.2rem;
 }
 
-/* Footer con gradiente */
+/* Footer con video de fondo - VERSIÓN ELEGANTE Y PROFESIONAL */
 .hero-footer {
-    background: linear-gradient(135deg,
-            rgba(255, 245, 245, 0.8) 0%,
-            rgba(255, 255, 255, 0.9) 50%,
-            rgba(255, 245, 245, 0.8) 100%);
-    padding: 4rem 2rem;
+    position: relative;
+    padding: 6rem 2rem;
     text-align: center;
     border-top: 1px solid rgba(255, 77, 77, 0.1);
+    overflow: hidden;
+    background: transparent;
+}
+
+.hero-footer-video {
+    object-fit: cover;
+    /* Mantén esto */
+    transform: scale(1.3);
+    /* Empieza con 1.3 (30% más grande = se ve más alejado) */
+    transform-origin: center center;
+    /* Escala desde el centro */
+}
+
+/* Overlay del footer removido para vista natural */
+.hero-footer-overlay {
+    display: none;
 }
 
 .footer-content {
+    position: relative;
     max-width: 900px;
     margin: 0 auto;
+    z-index: 2;
 }
 
 .hero-slogan {
-    font-size: clamp(1.75rem, 4.5vw, 2.5rem);
-    font-weight: 700;
-    color: var(--text-dark);
-    letter-spacing: 0.02em;
-    margin-bottom: 1rem;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    color: white;
+    letter-spacing: 0.03em;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    line-height: 1.2;
 }
 
 .hero-subtitle-footer {
-    font-size: 1.25rem;
-    color: var(--gray);
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    color: rgba(255, 255, 255, 0.95);
     font-weight: 500;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
 }
 
 .emoji {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-left: 0.5rem;
 }
 
@@ -314,8 +331,7 @@
 
     .hero-subtitle {
         max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 
     .hero-ctas {
@@ -324,6 +340,10 @@
 
     .social-proof {
         justify-content: center;
+    }
+
+    .hero-footer {
+        padding: 5rem 2rem;
     }
 }
 
@@ -355,15 +375,16 @@
         font-size: 1rem;
     }
 
+    .hero-footer {
+        padding: 4rem 1.5rem;
+    }
+
     .hero-slogan {
-        font-size: 1.5rem;
+        font-size: clamp(1.8rem, 6vw, 2.6rem);
     }
 
     .hero-subtitle-footer {
-        font-size: 1.125rem;
-    }
-
-    .hero-footer {
-        padding: 3rem 1.5rem;
+        font-size: 1.2rem;
+        padding: 0 1rem;
     }
 }

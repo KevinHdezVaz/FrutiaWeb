@@ -16,6 +16,16 @@ const Hero = () => {
     return (
         <section className="hero" id="que-es">
             <div className="hero-bg">
+                <video
+                    className="hero-video"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                >
+                    <source src="/images/videoFondoFrutia.mp4" type="video/mp4" />
+                </video>
+                <div className="hero-overlay"></div>
                 <div className="hero-container">
                     <div className="hero-content">
                         <div className="hero-visual">

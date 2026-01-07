@@ -48,25 +48,16 @@ const Hero = () => {
 
             {/* ⭐ AGREGAR VIDEO DE FONDO EN EL FOOTER */}
             <div className="hero-footer reveal reveal-up">
-                <div className="footer-mockup-section">
 
-                    <div className="footer-content">
-                        <div className="footer-text-section">
-                            <h2 className="hero-slogan">{t('hero.slogan')}</h2>
-                            <p className="hero-subtitle-footer">
-                                {t('hero.sloganSubtitle')}
-                            </p>
-                        </div>
-
-                        <div className="phone-mockup-footer">
-                            <img
-                                src={images.iphone[currentLang]}
-                                alt={t('hero.imageAlt')}
-                                className="iphone-mockup-footer-img"
-                            />
-                        </div>
-                    </div>
+                <div className="footer-text-section">
+                    <h2 className="hero-slogan">{t('hero.slogan')}</h2>
+                    <p className="hero-subtitle-footer">
+                        {t('hero.sloganSubtitle')}
+                    </p>
                 </div>
+
+
+
             </div>
         </section>
     );

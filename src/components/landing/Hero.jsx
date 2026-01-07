@@ -28,15 +28,7 @@ const Hero = () => {
                 <div className="hero-overlay"></div>
                 <div className="hero-container">
                     <div className="hero-content">
-                        <div className="hero-visual">
-                            <div className="phone-mockup">
-                                <img
-                                    src={images.iphone[currentLang]}
-                                    alt={t('hero.imageAlt')}
-                                    className="iphone-mockup-img"
-                                />
-                            </div>
-                        </div>
+
 
                         <div className="hero-text">
                             <h1 className="hero-title">
@@ -56,19 +48,24 @@ const Hero = () => {
 
             {/* ⭐ AGREGAR VIDEO DE FONDO EN EL FOOTER */}
             <div className="hero-footer reveal reveal-up">
-                <video
-                    className="hero-footer-video"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                >
-                </video>
-                <div className="footer-content">
-                    <h2 className="hero-slogan">{t('hero.slogan')}</h2>
-                    <p className="hero-subtitle-footer">
-                        {t('hero.sloganSubtitle')}
-                    </p>
+                <div className="footer-mockup-section">
+
+                    <div className="footer-content">
+                        <div className="footer-text-section">
+                            <h2 className="hero-slogan">{t('hero.slogan')}</h2>
+                            <p className="hero-subtitle-footer">
+                                {t('hero.sloganSubtitle')}
+                            </p>
+                        </div>
+
+                        <div className="phone-mockup-footer">
+                            <img
+                                src={images.iphone[currentLang]}
+                                alt={t('hero.imageAlt')}
+                                className="iphone-mockup-footer-img"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

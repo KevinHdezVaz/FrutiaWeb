@@ -15,7 +15,7 @@
         "badge": "4.9 ★ en App Store",
         "imageAlt": "Frutia App en iPhone - Pantalla de nutrición personalizada",
         "socialProof": "Ya usado por +12,400 personas",
-        "slogan": "CONSTANCIA. CRITERIO. PROCESO.",
+        "slogan": "CONSTANCIA CRITERIO PROCESO",
         "sloganSubtitle": "Acompañamiento real para decisiones reales."
     },
     "preferences": {
@@ -98,19 +98,19 @@
         "questions": {
             "q1": {
                 "question": "¿Frutia reemplaza a un nutricionista?",
-                "answer": "FRUTIA no busca reemplazar la figura de un nutricionista clínico, pero sí actúa como tu nutricionista digital en el día a día. Analiza tu información —objetivo, hábitos, preferencias y disponibilidad de alimentos— para crear y ajustar planes personalizados según tu contexto real. Si necesitas adaptaciones o presentas cambios, la IA reorganiza tu plan automáticamente. Sin embargo, para diagnósticos médicos o situaciones clínicas específicas, siempre será fundamental el acompañamiento de un profesional; en esos casos, FRUTIA funciona como un complemento inteligente entre consultas."
+                "answer": "FRUTIA no busca reemplazar la figura de un nutricionista clínico, pero sí actúa como tu nutricionista digital en el día a día. Analiza tu información —objetivo, hábitos, preferencias y disponibilidad de alimentos— para crear y ajustar planes personalizados según tu contexto real. Si necesitas adaptaciones o presentas cambios, FRUTIA reorganiza tu plan automáticamente. Sin embargo, para diagnósticos médicos o situaciones clínicas específicas, siempre será fundamental el acompañamiento de un profesional; en esos casos, FRUTIA funciona como un complemento inteligente entre consultas."
             },
             "q2": {
                 "question": "¿Qué pasa si no tengo algunos alimentos del plan?",
-                "answer": "No pasa nada. FRUTIA está diseñada para adaptarse a tu realidad, no para imponerte un plan rígido. La app trabaja desde el inicio con los alimentos que eliges y tienes disponibles, ofreciéndote opciones equivalentes por macronutriente para que armes tus comidas con flexibilidad. Si un día te falta algo o quieres cambiarlo, la IA reorganiza tu comida en segundos manteniendo tus macros y tu objetivo intactos."
+                "answer": "FRUTIA está diseñada para adaptarse a tu realidad, no para imponerte un plan rígido. La app trabaja desde el inicio con los alimentos que eliges y tienes disponibles, ofreciéndote opciones equivalentes por macronutriente para que armes tus comidas con flexibilidad. Si un día te falta algo o quieres cambiarlo, FRUTIA reorganiza tu comida en segundos manteniendo tus macros y tu objetivo intactos."
             },
             "q3": {
                 "question": "¿Puedo usar Frutia si tengo restricciones alimentarias?",
-                "answer": "Sí. FRUTIA se adapta a alergias, intolerancias y preferencias desde el inicio, excluyendo automáticamente cualquier alimento que no debas o no quieras consumir. Además de filtrar, la IA reconstruye tu plan de forma inteligente, proponiendo alternativas seguras y equivalentes para que avances sin comprometer tu progreso."
+                "answer": "Sí. FRUTIA se adapta a alergias, intolerancias y preferencias desde el inicio, excluyendo automáticamente cualquier alimento que no debas o no quieras consumir. Además de filtrar, FRUTIA reconstruye tu plan de forma inteligente, proponiendo alternativas seguras y equivalentes para que avances sin comprometer tu progreso."
             },
             "q4": {
                 "question": "¿Qué pasa si un día me salgo del plan?",
-                "answer": "No pasa nada. FRUTIA entiende que la nutrición real no es perfecta. Si comes algo fuera del plan, la IA analiza lo que ingeriste y reajusta el resto del día para equilibrar calorías y macronutrientes. No castiga: transforma los desvíos en ajustes inteligentes para que sigas avanzando sin culpa."
+                "answer": "FRUTIA entiende que la nutrición real no es perfecta. Si comes algo fuera del plan, FRUTIA analiza lo que ingeriste y reajusta el resto del día para equilibrar calorías y macronutrientes. No castiga: transforma los desvíos en ajustes inteligentes para que sigas avanzando sin culpa."
             },
             "q5": {
                 "question": "¿Puedo exportar o compartir mi plan?",
@@ -177,7 +177,7 @@
             "description": "No desaparece después de darte un plan.<br />Está presente cuando dudas, improvisas o necesitas decidir rápido."
         },
         "card3": {
-            "title": "Continuidad",
+            "title": "Proceso",
             "description": "No depende de disciplina extrema ni de semanas perfectas.<br />Te ayuda a seguir avanzando incluso cuando un día no sale como esperabas."
         },
         "statement": "Frutia no es un app mas",

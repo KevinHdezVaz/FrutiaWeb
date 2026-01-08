@@ -15,7 +15,7 @@
         "badge": "4.9 ★ on App Store",
         "imageAlt": "Frutia App on iPhone - Personalized nutrition screen",
         "socialProof": "Already used by +12,400 people",
-        "slogan": "CONSISTENCY. CRITERIA. PROCESS.",
+        "slogan": "CONSISTENCY CRITERIA PROCESS",
         "sloganSubtitle": "Real support for real decisions."
     },
     "preferences": {
@@ -92,11 +92,11 @@
         "questions": {
             "q1": {
                 "question": "Does Frutia replace a nutritionist?",
-                "answer": "Frutia isn't meant to replace a clinical nutrition professional — it acts as your digital nutrition coach for everyday decisions. It analyzes your goals, habits, preferences and food availability to create and adjust personalized plans. When changes happen, AI adapts your plan automatically. For medical conditions or clinical needs, professional guidance is still essential. In those cases, Frutia works as a smart companion between visits."
+                "answer": "Frutia isn't meant to replace a clinical nutrition professional — it acts as your digital nutrition coach for everyday decisions. It analyzes your goals, habits, preferences and food availability to create and adjust personalized plans. When changes happen, FRUTIA adapts your plan automatically. For medical conditions or clinical needs, professional guidance is still essential. In those cases, Frutia works as a smart companion between visits."
             },
             "q2": {
                 "question": "What if I don't have certain foods from the plan?",
-                "answer": "No problem. Frutia adapts to what you actually have. It offers equivalent substitutions across macronutrients so you can build meals flexibly. If something is missing — or you just want to swap — AI reorganizes your meal in seconds while keeping your goals intact."
+                "answer": "Frutia adapts to what you actually have. It offers equivalent substitutions across macronutrients so you can build meals flexibly. If something is missing — or you just want to swap — FRUTIA reorganizes your meal in seconds while keeping your goals intact."
             },
             "q3": {
                 "question": "Can I use Frutia if I have dietary restrictions?",
@@ -104,7 +104,7 @@
             },
             "q4": {
                 "question": "What happens if I go off the plan?",
-                "answer": "Frutia doesn't punish you. If you have an off-plan meal, the AI analyzes it and adjusts the rest of the day to help balance calories and macros. It turns detours into smart adjustments so you can move forward without guilt."
+                "answer": "Frutia doesn't punish you. If you have an off-plan meal, FRUTIA analyzes it and adjusts the rest of the day to help balance calories and macros. It turns detours into smart adjustments so you can move forward without guilt."
             },
             "q5": {
                 "question": "Can I export my plan?",
@@ -177,7 +177,7 @@
             "description": "It doesn't disappear after giving you a plan.<br />It's there when you doubt, improvise, or need to decide fast."
         },
         "card3": {
-            "title": "Continuity",
+            "title": "Process",
             "description": "It doesn't depend on extreme discipline or perfect weeks.<br />It helps you keep moving forward even when a day doesn't go as expected."
         },
         "statement": "Frutia is not just another app",

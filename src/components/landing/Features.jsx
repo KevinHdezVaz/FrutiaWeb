@@ -36,13 +36,13 @@ const Features = () => {
             '/images/screen1_ingles.webp',
             '/images/screen2_ingles.webp',
             '/images/screen3_ingles.webp',
-            '/images/screen4_ingles.webp'
+            '/images/screen4_ingless.webp'
         ]
         : [
             '/images/screen1.webp',
             '/images/screen2.webp',
             '/images/screen3.webp',
-            '/images/screen5.webp'
+            '/images/screen51.webp'
         ];
 
     return (

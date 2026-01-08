@@ -84,44 +84,11 @@ const Differentiators = () => {
                     </div>
 
                     <div className="split-container">
-                        <div className="split-side negative">
-                            <div className="split-label">
-                                <span className="label-icon">❌</span>
-                                <span>{t('differentiators.others')}</span>
-                            </div>
-                            <ul className="split-list">
-                                <li>
-                                    <span className="list-icon">×</span>
-                                    <span>{t('differentiators.comparison1.others')}</span>
-                                </li>
-                                <li>
-                                    <span className="list-icon">×</span>
-                                    <span>{t('differentiators.comparison2.others')}</span>
-                                </li>
-                            </ul>
-                        </div>
 
-                        <div className="split-divider">
-                            <div className="divider-line"></div>
-                            <div className="divider-badge">VS</div>
-                        </div>
 
-                        <div className="split-side positive">
-                            <div className="split-label">
-                                <span className="label-icon">✓</span>
-                                <span>Frutia</span>
-                            </div>
-                            <ul className="split-list">
-                                <li>
-                                    <span className="list-icon">✓</span>
-                                    <span>{t('differentiators.comparison1.frutia')}</span>
-                                </li>
-                                <li>
-                                    <span className="list-icon">✓</span>
-                                    <span>{t('differentiators.comparison2.frutia')}</span>
-                                </li>
-                            </ul>
-                        </div>
+
+
+
                     </div>
                 </div>
 

@@ -38,7 +38,7 @@
             "description": "Te acompaña y te entiende"
         },
         "meAdapto": {
-            "name": "Me Adapto bueno",
+            "name": "Me Adapto",
             "description": "Se ajusta según tu momento"
         },
         "frutia2": {
@@ -122,11 +122,11 @@
             },
             "q7": {
                 "question": "¿Cómo crea FRUTIA mi plan nutricional?",
-                "answer": "FRUTIA crea tu plan nutricional a partir de lo que tú eres y de lo que realmente necesitas, no de un modelo genérico. La app toma en cuenta tu objetivo, nivel de actividad, preferencias alimentarias, restricciones, alergias y los alimentos que disfrutas o prefieres evitar. Con esta información, FRUTIA construye un plan diario flexible, con opciones por grupo de macronutrientes, para que puedas elegir comidas que se adapten a tus gustos y a tu rutina. Más allá de las calorías, FRUTIA prioriza que tu alimentación sea funcional, sostenible y coherente contigo. Si no te gusta un alimento, si eres alérgico o si necesitas hacer cambios, la IA ajusta el plan automáticamente para seguir alineada con tu bienestar y tus objetivos."
+                "answer": "FRUTIA crea tu plan nutricional a partir de lo que tú eres y de lo que realmente necesitas, no de un modelo genérico. La app toma en cuenta tu objetivo, nivel de actividad, preferencias alimentarias, restricciones, alergias y los alimentos que disfrutas o prefieres evitar. Con esta información, FRUTIA construye un plan diario flexible, con opciones por grupo de macronutrientes, para que puedas elegir comidas que se adapten a tus gustos y a tu rutina. Más allá de las calorías, FRUTIA prioriza que tu alimentación sea funcional, sostenible y coherente contigo. Si no te gusta un alimento, si eres alérgico o si necesitas hacer cambios, FRUTIA ajusta el plan automáticamente para seguir alineada con tu bienestar y tus objetivos."
             },
             "q8": {
                 "question": "¿Qué diferencia a FRUTIA de otras apps de nutrición?",
-                "answer": "La principal diferencia es que FRUTIA no solo registra lo que comes: te acompaña y toma decisiones contigo. Mientras muchas apps se limitan a contar calorías o mostrar números, FRUTIA utiliza inteligencia artificial para interpretar tu contexto, detectar desequilibrios y proponerte soluciones prácticas en tiempo real. Si cambias un alimento, si te sales del plan o si tu rutina se modifica, FRUTIA responde y ajusta. FRUTIA combina planificación, seguimiento y acompañamiento continuo en un solo lugar, transformando la nutrición en un proceso más flexible, inteligente y sostenible."
+                "answer": "La principal diferencia es que FRUTIA no solo registra lo que comes: te acompaña y toma decisiones contigo. Mientras muchas apps se limitan a contar calorías o mostrar números, Frutia interpreta tu contexto, detecta desequilibrios y propone soluciones prácticas en tiempo real. Si cambias un alimento, si te sales del plan o si tu rutina se modifica, FRUTIA responde y ajusta. FRUTIA combina planificación, seguimiento y acompañamiento continuo en un solo lugar, transformando la nutrición en un proceso más flexible, inteligente y sostenible."
             }
         }
     },

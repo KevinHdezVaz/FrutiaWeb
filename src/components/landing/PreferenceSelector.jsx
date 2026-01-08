@@ -13,14 +13,14 @@ const PreferenceSelector = () => {
             description: t('preferences.motivador.description'),
             color: '#FF4D4D',
             gradient: 'linear-gradient(135deg, #FFB3C1 0%, #FFC9D6 50%, #FFE0E8 100%)',
-            video: '/images/frutia_motivador_videoo.mp4', // ← Tu video aquí
+            video: '/images/frutia_motivador_new.mp4', // ← Tu video aquí
         },
         directo: {
             name: t('preferences.directo.name'),
             description: t('preferences.directo.description'),
             color: '#bdb9bdff',
             gradient: 'linear-gradient(135deg, #E8E6E8 0%, #F0EEF0 50%, #F8F6F8 100%)',
-            video: '/images/frutia_directa_videoo.mp4',
+            video: '/images/frutia_directa_new.mp4',
         },
         cercano: {
             name: t('preferences.cercano.name'),

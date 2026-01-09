@@ -19,7 +19,7 @@
 
 .section-badge {
     display: inline-block;
-    background: linear-gradient(135deg, rgba(255, 77, 77, 0.12) 0%, rgba(255, 138, 128, 0.12) 100%);
+    background: linear-gradient(135deg, rgba(155, 35, 58, 0.12) 0%, rgba(180, 60, 85, 0.12) 100%);
     color: var(--primary);
     padding: 0.5rem 1.25rem;
     border-radius: 50px;
@@ -27,7 +27,7 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     margin-bottom: 1.5rem;
-    border: 1px solid rgba(255, 77, 77, 0.2);
+    border: 1px solid rgba(155, 35, 58, 0.2);
 }
 
 .section-title {
@@ -64,12 +64,12 @@
 
 .faq-item:hover {
     border-color: var(--primary);
-    box-shadow: 0 8px 24px rgba(255, 77, 77, 0.1);
+    box-shadow: 0 8px 24px rgba(155, 35, 58, 0.1);
 }
 
 .faq-item.active {
     border-color: var(--primary);
-    box-shadow: 0 8px 24px rgba(255, 77, 77, 0.15);
+    box-shadow: 0 8px 24px rgba(155, 35, 58, 0.15);
 }
 
 .faq-question {
@@ -95,7 +95,7 @@
 .faq-icon {
     width: 32px;
     height: 32px;
-    background: rgba(255, 77, 77, 0.1);
+    background: rgba(155, 35, 58, 0.1);
     color: var(--primary);
     border-radius: 50%;
     display: flex;
@@ -154,13 +154,13 @@
     font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 24px rgba(255, 77, 77, 0.3);
+    box-shadow: 0 8px 24px rgba(155, 35, 58, 0.3);
 }
 
 .contact-button:hover {
     background: var(--primary-dark);
     transform: translateY(-3px);
-    box-shadow: 0 12px 32px rgba(255, 77, 77, 0.4);
+    box-shadow: 0 12px 32px rgba(155, 35, 58, 0.4);
 }
 
 /* Responsive */

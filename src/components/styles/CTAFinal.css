@@ -1,6 +1,6 @@
 /* CTAFinal.css */
 .cta-final {
-    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+    background: linear-gradient(135deg, #9b233a 0%, #722f37 100%);
     padding: 5rem 0;
     text-align: center;
     color: white;
@@ -20,7 +20,7 @@
 
 .cta-button {
     background: white;
-    color: #ff6b6b;
+    color: #9b233a;
     padding: 1.25rem 3rem;
     border-radius: 3rem;
     border: none;

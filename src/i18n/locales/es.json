@@ -14,9 +14,9 @@
         "watch": "Ver cómo funciona",
         "badge": "4.9 ★ en App Store",
         "imageAlt": "Frutia App en iPhone - Pantalla de nutrición personalizada",
-        "socialProof": "Ya usado por +12,400 personas",
-        "slogan": "CRITERIO ACOMPAÑAMIENTO PROCESO",
-        "sloganSubtitle": "FRUTIA integra la nutrición a tu vida a partir de tu contexto. Para sostener un plan que se adapte a tu rutina, no que la limite. Un proceso flexible, inteligente y sostenible."
+        "parallax_1": "FRUTIA integra la nutrición a tu vida a partir de tu contexto.",
+        "parallax_2": "Para sostener un plan que se adapte a tu rutina, no que la limite.",
+        "parallax_3": "Un proceso flexible, inteligente y sostenible."
     },
     "preferences": {
         "title": "Elige cómo quieres que Frutia te acompañe",

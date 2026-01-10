@@ -117,11 +117,14 @@ const Hero = () => {
                             transition: 'opacity 0.3s ease'
                         }}
                     >
-                        <h2 className="parallax-title">
-                            {t('hero.slogan')}
-                        </h2>
-                        <p className="parallax-subtitle">
-                            {t('hero.sloganSubtitle')}
+                        <p className="parallax-text-block main">
+                            {t('hero.parallax_1')}
+                        </p>
+                        <p className="parallax-text-block secondary">
+                            {t('hero.parallax_2')}
+                        </p>
+                        <p className="parallax-text-block final">
+                            {t('hero.parallax_3')}
                         </p>
                     </div>
                 </div>

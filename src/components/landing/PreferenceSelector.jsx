@@ -11,33 +11,32 @@ const PreferenceSelector = () => {
         motivador: {
             name: t('preferences.motivador.name'),
             description: t('preferences.motivador.description'),
-            color: '#8b1a2f',
-            gradient: 'linear-gradient(135deg, #f8eded 0%, #eac8cb 50%, #d6939b 100%)',
-            video: '/images/frutia_motivador_new.mp4', // ← Tu video aquí
+            color: '#B52A3A',
+            gradient: 'linear-gradient(180deg, #B52A3A 0%, #8B1A2F 100%)',
+            video: '/images/frutia_motivador_new.mp4',
         },
         directo: {
             name: t('preferences.directo.name'),
             description: t('preferences.directo.description'),
-            color: '#bdb9bdff',
-            gradient: 'linear-gradient(135deg, #E8E6E8 0%, #F0EEF0 50%, #F8F6F8 100%)',
+            color: '#C8E6D4',
+            gradient: 'linear-gradient(180deg, #C8E6D4 0%, #A0C8B0 100%)',
             video: '/images/frutia_directa_new.mp4',
         },
         cercano: {
             name: t('preferences.cercano.name'),
             description: t('preferences.cercano.description'),
-            color: '#5c111d',
-            gradient: 'linear-gradient(135deg, #efdfe1 0%, #e1b8c0 50%, #b47a85 100%)',
+            color: '#FF9A3C',
+            gradient: 'linear-gradient(180deg, #FF9A3C 0%, #B85A15 100%)',
             video: '/images/frutia_cercana_videoo.mp4',
         },
         meAdapto: {
             name: t('preferences.meAdapto.name'),
             description: t('preferences.meAdapto.description'),
-            color: '#4c9eafff',
-            gradient: 'linear-gradient(135deg, #B8E0E8 0%, #D0EBF0 50%, #E8F5F8 100%)',
+            color: '#F5E6A8',
+            gradient: 'linear-gradient(180deg, #F5E6A8 0%, #C4A860 100%)',
             video: '/images/frutia_meadapto_videoo.mp4',
         },
     };
-
     const currentPref = preferences[selectedPreference];
 
     const handlePreferenceChange = (key) => {

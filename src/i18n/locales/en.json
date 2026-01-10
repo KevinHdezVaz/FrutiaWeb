@@ -14,9 +14,9 @@
         "watch": "See how it works",
         "badge": "4.9 ★ on App Store",
         "imageAlt": "Frutia App on iPhone - Personalized nutrition screen",
-        "socialProof": "Already used by +12,400 people",
-        "slogan": "CRITERIA SUPPORT PROCESS",
-        "sloganSubtitle": "FRUTIA integrates nutrition into your life based on your context. To sustain a plan that adapts to your routine, not one that limits it. A flexible, intelligent, and sustainable process."
+        "parallax_1": "FRUTIA integrates nutrition into your life based on your context.",
+        "parallax_2": "To sustain a plan that adapts to your routine, not one that limits it.",
+        "parallax_3": "A flexible, intelligent, and sustainable process."
     },
     "preferences": {
         "title": "Choose how you want Frutia to support you",

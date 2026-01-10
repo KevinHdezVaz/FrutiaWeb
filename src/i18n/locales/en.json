@@ -16,7 +16,7 @@
         "imageAlt": "Frutia App on iPhone - Personalized nutrition screen",
         "socialProof": "Already used by +12,400 people",
         "slogan": "CRITERIA SUPPORT PROCESS",
-        "sloganSubtitle": "Real support for real decisions."
+        "sloganSubtitle": "FRUTIA integrates nutrition into your life based on your context. To sustain a plan that adapts to your routine, not one that limits it. A flexible, intelligent, and sustainable process."
     },
     "preferences": {
         "title": "Choose how you want Frutia to support you",
@@ -105,10 +105,6 @@
             "q4": {
                 "question": "What happens if I go off the plan?",
                 "answer": "Frutia doesn't punish you. If you have an off-plan meal, FRUTIA analyzes it and adjusts the rest of the day to help balance calories and macros. It turns detours into smart adjustments so you can move forward without guilt."
-            },
-            "q5": {
-                "question": "Can I export my plan?",
-                "answer": "Yes — you can review your history and download a PDF, ideal for your own tracking or to share with a coach or nutritionist."
             },
             "q6": {
                 "question": "Is Frutia right for me?",

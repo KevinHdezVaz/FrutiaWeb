@@ -1,14 +1,20 @@
-/* Hero.css - Tema oficial de la app - VERSIÓN FINAL CON MOCKUP Y GLASSMORPHISM */
+/* Hero.css - Tema oficial de la app - VERSIÓN FINAL CON PARALLAX STICKY APPLE VISION PRO */
 
 .hero {
     width: 100%;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100vh;
 }
 
 .hero-bg {
     position: relative;
-    min-height: 72vh;
-    /* 80% de 90vh = 72vh */
+    min-height: 90vh;
+    /* Aumentado para más espacio */
     background:
         radial-gradient(circle at 20% 50%, rgba(155, 35, 58, 0.03) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(155, 35, 58, 0.03) 0%, transparent 50%),
@@ -20,7 +26,6 @@
             #dfb8c0 75%,
             #d4a2ad 100%);
 }
-
 
 /* Video de fondo principal */
 .hero-video {
@@ -43,14 +48,13 @@
 .hero-container {
     position: relative;
     height: 100%;
-    min-height: 72vh;
-    /* 80% de 90vh = 72vh */
+    min-height: 90vh;
+    /* Aumentado para más espacio */
     display: flex;
     align-items: center;
     padding: 4rem 0;
     z-index: 2;
 }
-
 
 /* Grid de dos columnas: texto a la izquierda, mockup a la derecha */
 .hero-content {
@@ -256,13 +260,99 @@
     }
 }
 
-/* Footer con mockup y fondo rojo */
-.hero-footer {
-    position: relative;
-    padding: 6rem 2rem;
-    border-top: 1px solid rgba(255, 77, 77, 0.1);
-    overflow: hidden;
+/* ============================================
+   SECCIÓN PARALLAX APPLE VISION PRO
+   ============================================ */
 
+/* ============================================
+   SECCIÓN PARALLAX APPLE VISION PRO
+   ============================================ */
+
+.parallax-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100vh;
+    /* Empieza después del hero fijo */
+    z-index: 10;
+    background: transparent;
+}
+
+.parallax-sticky-container {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 4rem 2rem;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.95) 0%,
+            rgba(255, 255, 255, 0.98) 50%,
+            rgba(255, 255, 255, 1) 100%);
+    backdrop-filter: blur(80px) saturate(200%) brightness(1.1);
+    -webkit-backdrop-filter: blur(80px) saturate(200%) brightness(1.1);
+    perspective: 1000px;
+    box-shadow: 0 -20px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* Capa de fondo animada */
+.parallax-background-layer {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background:
+        radial-gradient(circle at 30% 40%, rgba(155, 35, 58, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 70% 60%, rgba(155, 35, 58, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(155, 35, 58, 0.04) 0%, transparent 70%);
+    z-index: 0;
+    will-change: transform, opacity;
+}
+
+.parallax-content {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 2rem;
+    z-index: 1;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: opacity, transform;
+}
+
+.parallax-title {
+    font-size: clamp(2.5rem, 7vw, 6rem);
+    font-weight: 900;
+    color: #1d1d1f;
+    letter-spacing: -0.03em;
+    margin-bottom: 2rem;
+    line-height: 1.05;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    transform: translateZ(50px);
+}
+
+.parallax-subtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.8rem);
+    color: #1d1d1f;
+    /* Cambiado a negro para mayor contraste */
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    transform: translateZ(30px);
+}
+
+/* Remover estilos viejos del footer */
+.hero-footer,
+.parallax-bottom-sheet,
+.parallax-sheet-content,
+.footer-text-section {
+    display: none;
 }
 
 .footer-content {
@@ -274,33 +364,6 @@
     grid-template-columns: 1.2fr 1fr;
     gap: 4rem;
     align-items: center;
-}
-
-/* Sección de texto del footer */
-.footer-text-section {
-    text-align: center;
-}
-
-.hero-slogan {
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 800;
-    color: var(--text-dark);
-    letter-spacing: 0.03em;
-    margin-bottom: 1.2rem;
-    line-height: 1.2;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
-.hero-subtitle-footer {
-    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
-    color: var(--black);
-    font-weight: 500;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
 }
 
 /* Sección del mockup con fondo rojo */
@@ -356,7 +419,10 @@
     margin-left: 0.5rem;
 }
 
-/* Responsive */
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
 @media (max-width: 1024px) {
     .hero-content {
         grid-template-columns: 1fr;
@@ -413,19 +479,9 @@
         padding: 0 2rem;
     }
 
-    .footer-text-section {
-        text-align: center;
-        order: 1;
-    }
-
     .footer-mockup-section {
         order: 2;
         padding: 2.5rem 2rem;
-    }
-
-    .hero-subtitle-footer {
-        max-width: 100%;
-        margin: 0 auto;
     }
 
     .phone-mockup-footer {
@@ -440,25 +496,21 @@
         max-width: 280px;
     }
 
-    .hero-footer {
-        padding: 5rem 2rem;
+    .parallax-section {
+        height: 100vh;
+        /* Mantener 100vh */
     }
 }
 
 @media (max-width: 768px) {
-
-
     .hero-bg {
-        min-height: 64vh;
-        /* 80% de 80vh = 64vh */
+        min-height: 80vh;
     }
 
     .hero-container {
-        min-height: 64vh;
-        /* 80% de 80vh = 64vh */
+        min-height: 80vh;
         padding: 2rem 0;
     }
-
 
     .hero-content {
         gap: 3rem;
@@ -497,9 +549,29 @@
         gap: 0.75rem;
     }
 
-    /* Footer responsive móvil */
-    .hero-footer {
-        padding: 3rem 1rem;
+    /* Parallax responsive móvil */
+    .parallax-section {
+        height: 100vh;
+        margin-top: 100vh;
+    }
+
+    .parallax-sticky-container {
+        padding: 3rem 1.5rem;
+    }
+
+    .parallax-content {
+        padding: 1.5rem;
+    }
+
+    .parallax-title {
+        font-size: clamp(2rem, 9vw, 3.5rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .parallax-subtitle {
+        font-size: clamp(1rem, 4vw, 1.4rem);
+        padding: 0 1rem;
+        line-height: 1.5;
     }
 
     .footer-content {
@@ -515,21 +587,64 @@
     .iphone-mockup-footer-img {
         max-width: 220px;
     }
-
-    .hero-slogan {
-        font-size: clamp(1.5rem, 7vw, 2.2rem);
-        line-height: 1.2;
-        margin-bottom: 1rem;
-    }
-
-    .hero-subtitle-footer {
-        font-size: 1rem;
-        padding: 0;
-        line-height: 1.5;
-    }
 }
 
 /* Ajuste extra para móviles muy pequeños */
+@media (max-width: 480px) {
+    .hero-bg {
+        min-height: 70vh;
+    }
+
+    .hero-container {
+        min-height: 70vh;
+    }
+
+    .hero-text {
+        padding: 1.25rem 1rem;
+        margin: 0 0.25rem;
+    }
+
+    .hero-title {
+        font-size: 1.65rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9rem;
+    }
+
+    /* Parallax móviles pequeños */
+    .parallax-section {
+        height: 100vh;
+        margin-top: 100vh;
+    }
+
+    .parallax-sticky-container {
+        padding: 2rem 1rem;
+    }
+
+    .parallax-content {
+        padding: 1rem;
+    }
+
+    .parallax-title {
+        font-size: 2rem;
+        letter-spacing: -0.01em;
+        margin-bottom: 1rem;
+    }
+
+    .parallax-subtitle {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 0 0.5rem;
+    }
+}
+
 @media (max-width: 375px) {
     .hero-text {
         padding: 1.25rem 1rem;
@@ -550,11 +665,11 @@
         font-size: 0.9rem;
     }
 
-    .hero-slogan {
-        font-size: 1.4rem;
+    .parallax-title {
+        font-size: 1.8rem;
     }
 
-    .hero-subtitle-footer {
+    .parallax-subtitle {
         font-size: 0.95rem;
     }
 }

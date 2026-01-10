@@ -23,10 +23,7 @@ const FAQ = () => {
             question: t('faq.questions.q4.question'),
             answer: t('faq.questions.q4.answer')
         },
-        {
-            question: t('faq.questions.q5.question'),
-            answer: t('faq.questions.q5.answer')
-        },
+
         {
             question: t('faq.questions.q6.question'),
             answer: t('faq.questions.q6.answer')

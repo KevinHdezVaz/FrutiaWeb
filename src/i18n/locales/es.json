@@ -16,7 +16,7 @@
         "imageAlt": "Frutia App en iPhone - Pantalla de nutrición personalizada",
         "socialProof": "Ya usado por +12,400 personas",
         "slogan": "CRITERIO ACOMPAÑAMIENTO PROCESO",
-        "sloganSubtitle": "Acompañamiento real para decisiones reales."
+        "sloganSubtitle": "FRUTIA integra la nutrición a tu vida a partir de tu contexto. Para sostener un plan que se adapte a tu rutina, no que la limite. Un proceso flexible, inteligente y sostenible."
     },
     "preferences": {
         "title": "Elige cómo quieres que Frutia te acompañe",
@@ -111,10 +111,6 @@
             "q4": {
                 "question": "¿Qué pasa si un día me salgo del plan?",
                 "answer": "FRUTIA entiende que la nutrición real no es perfecta. Si comes algo fuera del plan, FRUTIA analiza lo que ingeriste y reajusta el resto del día para equilibrar calorías y macronutrientes. No castiga: transforma los desvíos en ajustes inteligentes para que sigas avanzando sin culpa."
-            },
-            "q5": {
-                "question": "¿Puedo exportar o compartir mi plan?",
-                "answer": "Sí. Puedes consultar tu historial y descargar tu plan en PDF. Es ideal para llevar control personal o compartirlo con tu coach o nutricionista."
             },
             "q6": {
                 "question": "¿FRUTIA está hecha para mí?",
